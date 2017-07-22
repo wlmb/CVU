@@ -1,7 +1,7 @@
 # CVU
 Sitio no oficial para hacer sugerencias constructivas o reportar fallas del cvu de conacyt.
 
-El propósito de este sitio es que la comunidad de usuarios del CVU puedan hacer *sugerencias* y señalar *fallas* en el sistema *CVU2017* de *CONACyT*. Aunque el sitio no es oficial, de manera que CONACyT no tiene *obligación* de dar seguimiento a lo aquí reportado, sí han manifestado la voluntad de hacerlo. 
+El propósito de este sitio es que la comunidad de usuarios del CVU puedan hacer *sugerencias* y señalar *fallas* en el sistema *CVU2017* de *CONACyT*. Como el sitio no es oficial CONACyT no tiene *obligación* de dar seguimiento a lo aquí reportado, pero sí ha manifestado su interés y voluntad de hacerlo. El ejercicio de mantener este sitio es un experimento en abrir puertas de comunicación entre desarrolladores de software cerrado empleado por dependencias oficiales y sus usuarios en analogía y empleando las herramientas que emplean los desarrolladores de software libre. Espero que el ejercicio sirva en particular para mejorar un paquete computacional que afecta fuertemente a la comunidad académica, pero de ser exitoso podría servir de ejemplo a seguir por otros desarrolladores y sus comunidades de usuarios. 
 
 Para emplear el sitio es necesario obtener una cuenta (gratuita) en *github*. Para ello debe entrar al [sitio](https://github.com) de github, pulsar sobre la liga para registarse (sign up), elegir un nombre de usuario con el que se identificarán sus contribuciones, proporcionar su correo electrónico, el cual será empleado para ser notificado sobre el avance de sus propios reportes y de aquellos a los que se suscriba, y una contraseña.
 
