@@ -7,4 +7,4 @@ Para emplear el sitio es necesario obtener una cuenta (gratuitas) en *github*. P
 
 Cualquier persona puede leer o contribuír a la lista de reportes entrando al [sitio](https://github.com/wlmb/CVU) del CVU y pulsando la pestaña *Issues*. La lista de reportes puede filtrarse con diversos criterios y tiene un buscador asociado. Pulsando sobre un reporte puede leer todas las contribuciones al mismo. 
 
-Si Ud. se ha registrado puede en cualquier momento iniciar una sesión. Esto le permitiría contribuir con nuevos comentarios a los reportes existentes, añadirles etiquetas o iniciar nuevos reportes.
+Si Ud. se ha registrado puede en cualquier momento iniciar una sesión. Esto le permitiría contribuir con nuevos comentarios a los reportes existentes, añadirles etiquetas o iniciar nuevos reportes. También le permitirá suscribirse a los reportes a los que quiera dar seguimiento, tras lo cual el sistema le enviará mensajes a la dirección electrónica que hubiese registrado para notificarle los cambios que vayan registrando sus reportes favoritos.
