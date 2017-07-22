@@ -18,6 +18,6 @@ Recomendaciones:
 1. Ponga a sus reportes un título corto y descriptivo.
 1. Evite una larga lista de sugerencias y fallas en el mismo reporte. Es más fácil dar seguimiento a sugerencias/fallas individuales. 
 1. Para comentarios más largos u opiniones de caracter general puede recurrir a la [lista de discusión](http://em.fis.unam.mx/pipermail/cvu) del CVU. 
-1. Si desea que un usuario particular vea su comentario, puede mencionar su cuenta antecedida de una arroba, \@cuenta
-
+1. Si desea que un usuario particular vea su comentario, puede mencionar su cuenta antecedida de una arroba, \@cuenta.
+1. Para conocer toda la riqueza de herramientas que ofrece github en su sistema de reportes y de desarrollo y control de versiones de software puede consultar las diversas guías y videos en su [sitio](https://https://github.com).
 
