@@ -49,6 +49,31 @@ $stc=qq(CREATE TABLE IF NOT EXISTS revistas
 die "Falló la creación de la tabla de revistas: $DBI::errstr" 
     unless $dbh->do($stc) >= 0;
 
+# prepare for dbas interactions.
+my $readar=qq(SELECT ROWID FROM artículos WHERE
+                revista IN
+                (SELECT ROWID from revistas WHERE revista LIKE ?)
+                AND volumen LIKE ? 
+                AND páginas LIKE ?);
+my $strar=$dbh->prepare($readar);
+my $writear=qq(
+            INSERT INTO artículos (título,autores,revista,año,páginas,volumen)
+            VALUES (?,?,?,?,?,?));
+my $stwar=$dbh->prepare($writear);
+my $readrev=qq(SELECT ROWID FROM revistas
+                     WHERE revista LIKE ?);
+my $strrev=$dbh->prepare($readrev);
+my $writerev=qq(INSERT INTO revistas (revista, revistacanónica)
+                      VALUES (?,?));
+my $stwrev=$dbh->prepare($writerev);
+my $readau=qq(SELECT ROWID FROM autores
+                     WHERE autor LIKE ?);
+my $strau=$dbh->prepare($readau);
+my $writeau=qq(INSERT INTO autores (autor, autorcanónico)
+                      VALUES (?,?));
+my $stwau=$dbh->prepare($writeau);
+
+
 foreach(@{$yaml->[0]->{artículos}}){
     my $revistaId=getrevistaId($_->{revista});
     my @autorIds;
@@ -57,56 +82,34 @@ foreach(@{$yaml->[0]->{artículos}}){
 	push @autorIds, $autorId;
     }
     my $autorIds=join ",",@autorIds;
-    my $read=qq(SELECT ROWID FROM artículos WHERE
-                revista IN
-                (SELECT ROWID from revistas WHERE revista LIKE ?)
-                AND volumen LIKE ? 
-                AND páginas LIKE ?);
-    my $str=$dbh->prepare($read);
-    $str->execute($_->{revista}, $_->{volumen}, $_->{páginas});
-    my ($id)=$str->fetchrow_array;
+    $strar->execute($_->{revista}, $_->{volumen}, $_->{páginas});
+    my ($id)=$strar->fetchrow_array;
     unless($id) {
-	my $write=qq(
-            INSERT INTO artículos (título,autores,revista,año,páginas,volumen)
-            VALUES (?,?,?,?,?,?));
-	my $stw=$dbh->prepare($write);
-	$stw->execute($_->{título}, $autorIds, $revistaId,$_->{año},
+	$stwar->execute($_->{título}, $autorIds, $revistaId,$_->{año},
 		      $_->{páginas}, $_->{volumen});
     }
 }
 
 sub getrevistaId { #regresa el ROWID de una revista
     my $revista=shift;
-    my $read=qq(SELECT ROWID FROM revistas
-                     WHERE revista LIKE ?);
-    my $str=$dbh->prepare($read);
-    $str->execute($revista);
-    my ($id)=$str->fetchrow_array;
+    $strrev->execute($revista);
+    my ($id)=$strrev->fetchrow_array;
     unless(defined $id) {
-	my $write=qq(INSERT INTO revistas (revista, revistacanónica)
-                      VALUES (?,?));
-	my $stw=$dbh->prepare($write);
-	$stw->execute($revista, $revista);
-	$str->execute($revista);
-	($id)=$str->fetchrow_array;
+	$stwrev->execute($revista, $revista);
+	$strrev->execute($revista);
+	($id)=$strrev->fetchrow_array;
     }
     return $id;
 }
 
 sub getautorId { #regresa el ROWID de una revista
     my $autor=shift;
-    my $read=qq(SELECT ROWID FROM autores
-                     WHERE autor LIKE ?);
-    my $str=$dbh->prepare($read);
-    $str->execute($autor);
-    my ($id)=$str->fetchrow_array;
+    $strau->execute($autor);
+    my ($id)=$strau->fetchrow_array;
     unless(defined $id) {
-	my $write=qq(INSERT INTO autores (autor, autorcanónico)
-                      VALUES (?,?));
-	my $stw=$dbh->prepare($write);
-	$stw->execute($autor, $autor);
-	$str->execute($autor);
-	($id)=$str->fetchrow_array;
+	$stwau->execute($autor, $autor);
+	$strau->execute($autor);
+	($id)=$strau->fetchrow_array;
     }
     return $id;
 }
