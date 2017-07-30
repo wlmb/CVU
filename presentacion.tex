@@ -1,0 +1,318 @@
+\documentclass{beamer}
+\mode<presentation>
+{
+  %\usetheme{Amsterdam}
+  %\usetheme{Berlin}
+  %\usetheme{Copenhagen}
+  %\usetheme{Malmoe}
+  %\usetheme{Dresden}
+  \usetheme{Darmstadt}
+  %\usetheme{Frankfurt}
+  %\usetheme{Copenhagen}
+  %\usetheme{Singapore}
+  %\usetheme{Hannover}
+  %\usetheme{Berkeley}
+  %\usetheme{Montpellier}
+  %\usetheme{Pittsburgh}
+  %\usetheme{Warsaw}
+  % or ...
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{pstricks}
+\usepackage{fancyvrb}
+\title[cvu] % (optional, use only with long paper titles)
+{Conversión automática de CV a CVU}
+\subtitle{} % (optional)
+\author{W. Luis Mochán Backal}
+\institute[ICF-UNAM] % (optional, but mostly needed)
+{
+  Instituto de Ciencias Físicas, UNAM\\
+}
+\date[2017-07-14, CONACyT]
+{Consejo Nacional de Ciencia y Tecnología\\CONACyT\\CdMx, agosto 14, 2017}
+\subject{CVU}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+\pgfdeclareimage[height=.8cm]{logounam}{logos}
+\logo{\pgfuseimage{logounam}}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\newif{\ifskip}
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}{Mi currículum en pdf}
+  \includegraphics<1>[width=\textwidth]{curriculum1}  
+  \includegraphics<2>[width=\textwidth]{curriculum2}  
+\end{frame}
+\begin{frame}[fragile]{Mi currículum en latex\ldots}
+\begin{Verbatim}[fontsize=\small]
+\documentclass{article}
+\usepackage[utf8]{espanhol}
+\addtolength{\textwidth}{2in}
+\addtolength{\hoffset}{-1in}
+\usepackage{fancyhdr}
+\lhead{\small Curriculum Vitae, W. Luis Mochán, \fecha}
+\rhead{\small \leftmark}
+\pagestyle{fancy}
+\usepackage{multicol}
+\usepackage{comment}
+%\excludecomment{examendegrado}
+%\newcommand{\est}[1]{{\bf #1}} %indica estudiantes
+\newcommand{\est}[1]{#1} %no hhagas nada para indicar estudiantes
+\renewcommand{\sectionmark}[1]{\markboth{\thesection. #1}{}}
+\end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Mi currículum en latex\ldots}
+\begin{Verbatim}[fontsize=\small]
+\subsection{Artículos de investigación en revistas periódicas}
+\begin{milista}
+\addtocounter{footnote}{1}\footnotetext{Con arbitraje}
+\setcounter{staticfoot}{\value{footnote}}
+\foo{\it  Optical Properties of Quasi-Two Dimensional Systems:
+	Non Local Effects\/},
+	W. Luis Mochán y Rubén Barrera,
+	Physical Review B \vol23, 5707-5718, (1981).
+\foo{\it  Surface Contribution to the Optical Properties of
+	Non-Local Systems\/},
+	W. Luis Mochán, Ronald Fuchs y Rubén G. Barrera,
+	Physical Review B \vol27, 771-780  (1983).
+\foo{\it  Surface Local-Field Effect\/},
+	W. L. Mochán y R.G. Barrera,
+	Journal de Physique (París) \vol45 C5, 207-212 (1984).
+\end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Precondición}
+\begin{Verbatim}[fontsize=\small]
+.Artículos
+  [\foo{\it  [Optical Properties of Quasi-Two Dimensional
+        Systems:Non Local Effects]\/}, [[W. Luis Mochán]
+      y [Rubén Barrera],] [Physical Review B] \vol[23],
+      [5707-5718], ([1981]).] 
+  [\foo{\it  [Surface Contribution to the Optical Properties
+        of Non-Local Systems]\/}, [[W. Luis Mochán], [Ronald
+        Fuchs] y [Rubén G. Barrera]], [Physical Review B]
+        \vol[27], [771-780]  ([1983]).]
+\end{Verbatim}
+\vdots
+\begin{Verbatim}[fontsize=\small]
+.FinArtículos
+\end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Formato}
+  \begin{itemize}
+  \item Formato casi libre pero estructurado:\\
+    .Artículos\\
+    \ldots{}[\ldots{}[Título]\ldots\\
+      {}[\ldots{}[Autor 1]\ldots {}[Autor 2]\ldots]\ldots\\
+      {}[Revista]\ldots\\
+      {}[Volumen]\ldots{}[Página(s)]\ldots{}[Año]\ldots]\\
+    \ldots{}[{\em otro artículo}] [{\em y otro}]\ldots\\
+    .FinArticulos
+  \item '\ldots' representa basura (comandos de latex)
+  \item Espacios múltiples, tabuladores, cambios de línea se ignoran.
+  \item Cada artículo, cada lista, cada campo, entre corchetes. Lo que
+    esté fuera de corchetes se ignora.
+  \end{itemize}
+\end{frame}
+\begin{frame}{Tiempos}
+  Tardé 22 minutos en precondicionar 38 artículos usando emacs, pero
+  sin usar macros.
+  
+\end{frame}
+\begin{frame}[fragile,shrink=10]{Extracción automática a YAML}
+  \begin{Verbatim}[fontsize=\small]
+#!/usr/bin/env perl
+use warnings;
+use strict;
+use feature qw(say);
+use utf8;
+use Text::Balanced qw(extract_bracketed);
+use YAML::Tiny;
+use open qw/ :std :encoding(utf8) /;
+
+my $yaml=YAML::Tiny->new();
+my $articulos;
+while(<>){
+    $articulos.=$_ if(/^\.Artículos/../^\.FinArtículos/);
+}
+my @articulos;
+while(my $articulo=extract_bracketed($articulos,'[]','(?ms:.*?)(?=\[)')){
+    push @articulos, $articulo;
+}
+  \end{Verbatim}
+\end{frame}
+\begin{frame}[fragile,shrink=10]{Uso}
+  \begin{Verbatim}[fontsize=\small]
+
+    $ # Para extraer artículos y mostrarlos en
+    $ # la pantalla:
+    $ ./articulos2yaml.pl precond.txt
+    $ #
+    $ #
+    $ # Para extraer artículos y guardarlos en
+    $ # un archivo
+    $ ./articulos2yaml.pl precond.txt > arts.yaml
+  \end{Verbatim}
+\end{frame}
+\begin{frame}[fragile,shrink=10]{Salida}
+\begin{Verbatim}[fontsize=\small]
+artículos:
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Rubén Barrera'
+    año: '1981'
+    paginas: 5707-5718
+    revista: 'Physical Review B'
+    titulo: 'Optical Properties of Quasi-Two Dimensional Systems: Non Local Effects'
+    volumen: '23'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Ronald Fuchs'
+      - 'Rubén G. Barrera'
+    año: '1983'
+    paginas: 771-780
+    revista: 'Physical Review B'
+    titulo: 'Surface Contribution to the Optical Properties of Non-Local Systems'
+    volumen: '27'
+  -
+\end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Errores}
+  \begin{itemize}
+  \item Corchetes mal balanceados. Ejemplo
+  \end{itemize}
+    \begin{Verbatim}[fontsize=\small]
+  -
+    autores:
+      - 'Raul Alfonso Vázquez Nava'
+      - 'Marcelo del Castillo-Mussot'
+      - 'W. Luis Mochán'
+      - 'Physical Review B'
+      - '47'
+      - '3971'
+      - '1993'
+    año: '5'
+    paginas: 'Journal of Physics: Condensed Matter'
+    revista: '\foo{\it[ Effective dielectric response of a composite with aligned spheroidal inclusions],} [Rubén G. Barrera],[ J. Giraldo ]y [W. Luis Mochán], [Physical Review B] \vol[ 47],[ 8528] ([1993]). '
+    titulo: 'Reflectance of non-local conducting superlattices'
+    volumen: '\foo{\it [Infrared anisotropy as a surface probe],} [ W. Luis Mochán] y [José Récamier]'
+  \end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Errores}
+  \begin{itemize}
+  \item Corchetes mal balanceados. Ejemplo
+  \begin{Verbatim}
+\foo{\it [[Reflectance of non-local conducting superlattices],}
+\est{[[Raul Alfonso Vázquez Nava]}, [Marcelo del Castillo-Mussot] y[ W.
+Luis Mochán],[
+Physical Review B] \vol[ 47], [3971] ([1993]).
+]
+[\foo{\it[ Effective dielectric response of a composite with aligned
+spheroidal inclusions],} [Rubén G.  Barrera],[ J. Giraldo ]y [W. Luis
+Mochán], [Physical Review B] \vol[ 47],[ 8528] ([1993]).  
+]
+  \end{Verbatim}
+\item Detección y corrección: Menos de 5 mins.
+  \end{itemize}
+\end{frame}
+\begin{frame}[fragile]{Base de datos}
+  \begin{Verbatim}
+$ # Crea y llena una base de datos
+$ ./yaml2db.pl -y arts.yaml -d arts.db
+$
+$ # Tablas
+$ sqlite3 arts.db '.schema'
+CREATE TABLE artículos(título,autores,revista,año,
+    páginas,volumen);
+CREATE TABLE autores (autor,autorcanónico);
+CREATE TABLE revistas(revista,revistacanónica);
+  \end{Verbatim}
+\end{frame}
+\begin{frame}[fragile,shrink=25]{Lista de artículos, revistas, autores}
+  \begin{Verbatim}[fontsize=\small]
+$ sqlite3 arts.db '.headers on' 'select ROWID,* from artículos'
+rowid|título                    |autores|revista |año|páginas  |volumen
+1    |Optical Properties of...  |1,2    |1      |1981|5707-5718|23
+2    |Surface Contribution to...|1,3,4  |1      |1983|771-780  |27
+3    |Surface Local-Field Effect|5,6    |2      |1984|207-212  |45 C5
+.
+$ sqlite3 arts.db '.headers on' 'select ROWID,* from revistas'
+rowid|revista                    |revistacanónica
+1    |Physical Review B          |Physical Review B
+2    |Journal de Physique (París)|Journal de Physique (París)
+3    |Physical Review Letters    |Physical Review Letters
+.
+$ sqlite3 arts.db '.headers on' 'select ROWID,* from autores'
+rowid|autor         |autorcanónico
+1    |W. Luis Mochán|W. Luis Mochán
+2    |Rubén Barrera |Rubén Barrera
+3    |Ronald Fuchs  |Ronald Fuchs
+.
+  \end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Canoniza revistas, autores}
+  \begin{Verbatim}
+$ # Asocia nombre común con nombre oficial
+$ sqlite3 arts.db 'UPDATE revistas 
+   SET revistacanónica="Physical Review Letters"
+   WHERE revista LIKE "PRL"'
+$ #
+$ sqlite3 arts.db 'UPDATE autores 
+   SET autorcanónico="Rubén G. Barrera-Pérez"
+   WHERE autor LIKE "Rubén Barrera"'
+  \end{Verbatim}
+\end{frame}
+\begin{frame}[fragile]{Añade campos}
+  \begin{Verbatim}
+$ # Añade issn y país a la tabla de revistas
+$ # (no a la de artículos)
+$ sqlite3 arts.db 'ALTER TABLE revistas ADD issn'
+$ sqlite3 arts.db 'ALTER TABLE revistas ADD país'
+$
+$ # Asigna issn a alguna revista
+$ sqlite3 arts.db 'UPDATE revistas
+   SET issn="0031-9007" WHERE
+   revistacanónica LIKE "Physical Review Letters"'
+$ sqlite3 arts.db 'UPDATE revistas
+   SET país="Estados Unidos" WHERE
+   revistacanónica LIKE "Physical Review Letters"'
+  \end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Conclusiones}
+  \begin{itemize}
+  \item Con muy poco esfuerzo se puede añadir estructura a un CV
+    ordinario para automatizar su proceso.
+  \item Hice un programa \Verb|articulos2yaml.pl| que convierte la
+    lista de artículos de un CV del formato {\em título, autores,
+      revista volumen, páginas (año)} a YAML.
+  \item El formato YAML es totalmente estructurado pero legible por
+    humanos, por lo que permite detectar y corregir errores 
+    manualmente, 
+  \item y se puede vertir a una base de datos automáticamente.
+  \item Hice un programa \Verb|yaml2db.pl| para hacer una base de
+    datos \verb|sqlite3|.
+  \item Mis programas son sólo {\em demostraciones de concepto}. Se
+    pueden mejorar y extender.
+  \end{itemize}
+\end{frame}
+\begin{frame}{Conclusiones}
+  \begin{itemize}
+  \item Con comandos SQL se puede manipular la base de datos agregándo
+    nombres canónicos y campos adicionales, evitando repeticiones.
+  \item Estas bases de datos podrían importarse automáticamente a los
+    CVU's de CONACyT.
+  \item Las pocas labores repetitivas requeridas (p. ej., añadir
+    corchetes al CV y canonizar nombres) pueden llevarse a cabo
+    rápidamente por un capturista o personal secretarial con un mínimo
+    de capacitación.
+  \end{itemize}
+\end{frame}
+\end{document}
