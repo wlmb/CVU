@@ -1,0 +1,75 @@
+.Artículos
+
+1.Mochán, W. L., del Castillo‐Mussot, M. & Vázques‐Nava,
+R. A. Transfer matrix approach to the optical reflectance of non‐local
+periodic superlattices. physica status solidi (b) 174, 273–278
+(1992).
+
+2.A.M. Dykhne. Conductivity of a Two-dimensional Two-phase
+System. Journal of Experimental and Theoretical Physics (JETP) 32, 63
+(1971).
+
+3.Guenneau, S., Zolla, F. & Nicolet, A. Homogenization of 3D finite
+photonic crystals with heterogeneous permittivity and
+permeability. Waves in Random and Complex Media 17, 653–697 (2007).
+
+4.Kristensson, G. & Wellander, N. Homogenization of the Maxwell
+Equations at Fixed Frequency. SIAM J. Appl. Math. 64, 170–195 (2003).
+
+5.Nevard, J. & Keller, J. B. Reciprocal relations for effective
+conductivities of anisotropic media. Journal of Mathematical Physics
+26, 2761–2765 (1985).
+
+6.Molyneux, J. E. Effective Permittivity of a Polycrystalline
+Dielectric. Journal of Mathematical Physics 11, 1172–1184 (1970).
+
+7.Schulgasser, K. On a phase interchange relationship for composite
+materials. Journal of Mathematical Physics 17, 378–381 (1976).
+
+8.Mendelson, K. S. A theorem on the effective conductivity of a
+two‐dimensional heterogeneous medium. Journal of Applied Physics 46,
+4740–4741 (1975).
+
+9.Craster, R. V. & Obnosov, Y. V. Checkerboard composites with
+separated phases. Journal of Mathematical Physics 42, 5379–5388
+(2001).
+
+11.Sten, J. C.-E. & Sjoberg, D. Low-Frequency Scattering Analysis and
+Homogenisation of Split-Ring Elements. Progress In Electromagnetics
+Research B 35, 187–212 (2011).
+
+12.Movchan, A. B. & Guenneau, S. Split-ring resonators and localized
+modes. Phys. Rev. B 70, 125116 (2004).
+
+14.Guizal, B. & Felbacq, D. Numerical computation of the scattering
+matrix of an electromagnetic resonator. Phys. Rev. E 66, 026602
+(2002).
+
+16.Agranovich, V. M. & Gartstein, Y. N. Electrodynamics of
+metamaterials and the Landau–Lifshitz approach to the magnetic
+permeability. Metamaterials 3, 1–9 (2009).
+
+17.Mochan, W. L. & Ramirez-Solis, A. How a Drug and Explosives
+Detector Proved Useless: Military Use of the GT200. IEEE Technology
+and Society Magazine 36, 76–82 (2017).
+
+18.Welte, S., Hacker, B., Daiss, S., Ritter, S. & Rempe, G. Cavity
+Carving of Atomic Bell States. Phys. Rev. Lett. 118, 210503 (2017).
+
+20.Biris, C. G. & Panoiu, N. C. Second harmonic generation in
+metamaterials based on homogeneous centrosymmetric
+nanowires. Phys. Rev. B 81, 195102 (2010).
+
+21.Mendoza, B. S. & Mochán, W. L. Exactly solvable model of surface
+second-harmonic generation. Phys. Rev. B 53, 4999–5006 (1996).
+
+22.Shi, F., Chen, Y., Han, P. & Soukoulis, C. M. Investigation of
+one-dimensional photonic bandgap structures containing lossy
+double-negative metamaterials through the Bloch
+impedance. J. Opt. Soc. Am. B, JOSAB 30, 1473–1478 (2013).
+
+23.Bender, C. M., Brody, D. C. & Müller, M. P. Hamiltonian for the
+Zeros of the Riemann Zeta Function. Phys. Rev. Lett. 118, 130201
+(2017). 
+
+.FinArtículos

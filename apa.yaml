@@ -1,0 +1,178 @@
+---
+artículos:
+  -
+    autores:
+      - 'V. M. Agranovich'
+      - 'Y. N. Gartstein'
+    año: '2009'
+    páginas: 1–9
+    revista: 'Metamaterials, '
+    título: 'Electrodynamics of metamaterials and the Landau–Lifshitz approach to the magnetic permeability'
+    volumen: '3'
+  -
+    autores:
+      - 'A.M. Dykhne'
+    año: '1971'
+    páginas: '63'
+    revista: 'Journal of Experimental and Theoretical Physics (JETP), '
+    título: 'Conductivity of a Two-dimensional Two-phase System'
+    volumen: '32'
+  -
+    autores:
+      - 'C. M. Bender'
+      - 'D. C. Brody'
+      - 'M. P. Müller'
+    año: '2017'
+    páginas: '130201'
+    revista: 'Physical Review Letters, '
+    título: 'Hamiltonian for the Zeros of the Riemann Zeta Function'
+    volumen: '118'
+  -
+    autores:
+      - 'C. G. Biris'
+      - 'N. C. Panoiu'
+    año: '2010'
+    páginas: '195102'
+    revista: 'Physical Review B, '
+    título: 'Second harmonic generation in metamaterials based on homogeneous centrosymmetric nanowires'
+    volumen: '81'
+  -
+    autores:
+      - 'R. V. Craster'
+      - 'Y. V. Obnosov'
+    año: '2001'
+    páginas: 5379–5388
+    revista: 'Journal of Mathematical Physics, '
+    título: 'Checkerboard composites with separated phases'
+    volumen: '42'
+  -
+    autores:
+      - 'S. Guenneau'
+      - 'F. Zolla'
+      - 'A. Nicolet'
+    año: '2007'
+    páginas: 653–697
+    revista: 'Waves in Random and Complex Media, '
+    título: 'Homogenization of 3D finite photonic crystals with heterogeneous permittivity and permeability'
+    volumen: '17'
+  -
+    autores:
+      - 'B. Guizal'
+      - 'D. Felbacq'
+    año: '2002'
+    páginas: '026602'
+    revista: 'Physical Review E, '
+    título: 'Numerical computation of the scattering matrix of an electromagnetic resonator'
+    volumen: '66'
+  -
+    autores:
+      - 'G. Kristensson'
+      - 'N. Wellander'
+    año: '2003'
+    páginas: 170–195
+    revista: 'SIAM Journal on Applied Mathematics, '
+    título: 'Homogenization of the Maxwell Equations at Fixed Frequency'
+    volumen: '64'
+  -
+    autores:
+      - 'K. S. Mendelson'
+    año: '1975'
+    páginas: 4740–4741
+    revista: 'Journal of Applied Physics, '
+    título: 'A theorem on the effective conductivity of a two‐dimensional heterogeneous medium'
+    volumen: '46'
+  -
+    autores:
+      - 'B. S. Mendoza'
+      - 'W. L. Mochán'
+    año: '1996'
+    páginas: 4999–5006
+    revista: 'Physical Review B, '
+    título: 'Exactly solvable model of surface second-harmonic generation'
+    volumen: '53'
+  -
+    autores:
+      - 'W. L. Mochán'
+      - 'M. del Castillo‐Mussot'
+      - 'R. A. Vázques‐Nava'
+    año: '1992'
+    páginas: 273–278
+    revista: 'Physica Status Solidi (B), '
+    título: 'Transfer matrix approach to the optical reflectance of non‐local periodic superlattices'
+    volumen: '174'
+  -
+    autores:
+      - 'W. L. Mochan'
+      - 'A. Ramirez-Solis'
+    año: '2017'
+    páginas: 76–82
+    revista: 'IEEE Technology and Society Magazine, '
+    título: 'How a Drug and Explosives Detector Proved Useless: Military Use of the GT200'
+    volumen: '36'
+  -
+    autores:
+      - 'J. E. Molyneux'
+    año: '1970'
+    páginas: 1172–1184
+    revista: 'Journal of Mathematical Physics, '
+    título: 'Effective Permittivity of a Polycrystalline Dielectric'
+    volumen: '11'
+  -
+    autores:
+      - 'A. B. Movchan'
+      - 'S. Guenneau'
+    año: '2004'
+    páginas: '125116'
+    revista: 'Physical Review B, '
+    título: 'Split-ring resonators and localized modes'
+    volumen: '70'
+  -
+    autores:
+      - 'J. Nevard'
+      - 'J. B. Keller'
+    año: '1985'
+    páginas: 2761–2765
+    revista: 'Journal of Mathematical Physics, '
+    título: 'Reciprocal relations for effective conductivities of anisotropic media'
+    volumen: '26'
+  -
+    autores:
+      - 'K. Schulgasser'
+    año: '1976'
+    páginas: 378–381
+    revista: 'Journal of Mathematical Physics, '
+    título: 'On a phase interchange relationship for composite materials'
+    volumen: '17'
+  -
+    autores:
+      - 'F. Shi'
+      - 'Y. Chen'
+      - 'P. Han'
+      - 'C. M. Soukoulis'
+    año: '2013'
+    páginas: 1473–1478
+    revista: 'JOSA B, '
+    título: 'Investigation of one-dimensional photonic bandgap structures containing lossy double-negative metamaterials through the Bloch impedance'
+    volumen: '30'
+  -
+    autores:
+      - 'J. C. Sten'
+      - 'D. -E., & Sjoberg'
+    año: '2011'
+    páginas: 187–212
+    revista: 'Progress In Electromagnetics Research B, '
+    título: 'Low-Frequency Scattering Analysis and Homogenisation of Split-Ring Elements'
+    volumen: '35'
+  -
+    autores:
+      - 'S. Welte'
+      - 'B. Hacker'
+      - 'S. Daiss'
+      - 'S. Ritter'
+      - 'G. Rempe'
+    año: '2017'
+    páginas: '210503'
+    revista: 'Physical Review Letters, '
+    título: 'Cavity Carving of Atomic Bell States'
+    volumen: '118'
+
