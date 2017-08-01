@@ -125,6 +125,7 @@
   
 \end{frame}
 \begin{frame}[fragile,shrink=10]{Extracción automática a YAML}
+  Programa articulos2yaml.pl
   \begin{Verbatim}[fontsize=\small]
 #!/usr/bin/env perl
 use warnings;
@@ -184,9 +185,17 @@ artículos:
   -
 \end{Verbatim}
 \end{frame}
+\begin{frame}{YAML}
+  \begin{itemize}
+  \item   La salida es un archivo de texto en el formato YAML.
+  \item YAML es un formato de texto muy estructurado.
+  \item Permite una fácil inspección y edición por humanos.
+  \item Permite un fácil proceso por computadoras.
+  \end{itemize}
+\end{frame}
 \begin{frame}[fragile]{Errores}
   \begin{itemize}
-  \item Corchetes mal balanceados. Ejemplo
+  \item Ejemplo de una salida errónea.
   \end{itemize}
     \begin{Verbatim}[fontsize=\small]
   -
@@ -207,7 +216,7 @@ artículos:
 \end{frame}
 \begin{frame}[fragile]{Errores}
   \begin{itemize}
-  \item Corchetes mal balanceados. Ejemplo
+  \item Causa del error: Corchetes mal balanceados.
   \begin{Verbatim}
 \foo{\it [[Reflectance of non-local conducting superlattices],}
 \est{[[Raul Alfonso Vázquez Nava]}, [Marcelo del Castillo-Mussot] y[ W.
@@ -219,10 +228,12 @@ spheroidal inclusions],} [Rubén G.  Barrera],[ J. Giraldo ]y [W. Luis
 Mochán], [Physical Review B] \vol[ 47],[ 8528] ([1993]).  
 ]
   \end{Verbatim}
-\item Detección y corrección: Menos de 5 mins.
+\item Detección y corrección de todos los errores en condicionar 34
+  artículos : Menos de 5 mins.
   \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Base de datos}
+  Programa yaml2db.pl
   \begin{Verbatim}
 $ # Crea y llena una base de datos
 $ ./yaml2db.pl -y arts.yaml -d arts.db
@@ -258,6 +269,12 @@ rowid|autor         |autorcanónico
   \end{Verbatim}
 \end{frame}
 \begin{frame}[fragile]{Canoniza revistas, autores}
+  \begin{itemize}
+  \item Tabla de revistas: mapea nombres comunes en números y en nombres
+    canónicos. 
+  \item Tabla de autores: mapea nombres comunes en números y en nombres
+    canónicos. 
+  \end{itemize}
   \begin{Verbatim}
 $ # Asocia nombre común con nombre oficial
 $ sqlite3 arts.db 'UPDATE revistas 
@@ -270,6 +287,10 @@ $ sqlite3 arts.db 'UPDATE autores
   \end{Verbatim}
 \end{frame}
 \begin{frame}[fragile]{Añade campos}
+  \begin{itemize}
+  \item Se puede añadir información adicional a cada tabla,
+    información que no está en la lista de publicaciones.
+  \end{itemize}
   \begin{Verbatim}
 $ # Añade issn y país a la tabla de revistas
 $ # (no a la de artículos)
@@ -285,7 +306,58 @@ $ sqlite3 arts.db 'UPDATE revistas
    revistacanónica LIKE "Physical Review Letters"'
   \end{Verbatim}
 \end{frame}
+\begin{frame}[fragile,shrink=10]{Formato APA}
+  \begin{itemize}
+  \item El programa \Verb+apa2yaml.pl+ $\sim$~50 líneas) procesa artículos
+    en el formato de la American Psychological Association. 
+  \item P. ej., convierte:
+  \begin{Verbatim}[fontsize=\small]
+Agranovich, V. M., & Gartstein, Y. N. (2009). Electrodynamics of
+metamaterials and the Landau–Lifshitz approach to the magnetic
+permeability. Metamaterials, 3(1),
+1–9. https://doi.org/10.1016/j.metmat.2009.02.002
+  \end{Verbatim}
+\item en
+  \begin{Verbatim}[fontsize=\small]
+  -
+    autores:
+      - 'V. M. Agranovich'
+      - 'Y. N. Gartstein'
+    año: '2009'
+    páginas: 1–9
+    revista: 'Metamaterials, '
+    título: 'Electrodynamics of metamaterials and
+             the Landau–Lifshitz approach to the magnetic permeability'
+    volumen: '3'
+  \end{Verbatim}
+  \end{itemize}
+\end{frame}
+\begin{frame}[fragile]{Formato NATURE}
+\begin{itemize}
+\item El programa \Verb+nature2yaml.pl+ ($\sim$50 líneas) procesa artículos
+  en el formato recomendado por Nature. 
+  \item P. ej., convierte:
+  \begin{Verbatim}[fontsize=\small]
+3.Guenneau, S., Zolla, F. & Nicolet, A. Homogenization of 3D finite
+photonic crystals with heterogeneous permittivity and
+permeability. Waves in Random and Complex Media 17, 653–697 (2007).
+  \end{Verbatim}
+\item en
+  \begin{Verbatim}[fontsize=\small]
+   -
+    autores:
+      - 'S. Guenneau'
+      - 'F.  Zolla'
+      - 'A.  Nicolet'
+    año: '2007'
+    páginas: 653–697
+    revista: 'Waves in Random and Complex Media'
+    título: 'Homogenization of 3D finite photonic crystals with heterogeneous permittivity and permeability'
+    volumen: '17'
 
+  \end{Verbatim}
+  \end{itemize}
+\end{frame}
 \begin{frame}[fragile]{Conclusiones}
   \begin{itemize}
   \item Con muy poco esfuerzo se puede añadir estructura a un CV
@@ -293,18 +365,22 @@ $ sqlite3 arts.db 'UPDATE revistas
   \item Hice un programa \Verb|articulos2yaml.pl| que convierte la
     lista de artículos de un CV del formato {\em título, autores,
       revista volumen, páginas (año)} a YAML.
+  \item Hice programas análogos \Verb+nature2yaml.pl+ y
+    \Verb+apa2yaml.pl+ que traducen automáticamente del 
+    formato recomendado por APA y por Nature a YAML.
+  \item Otros formatos son triviales de añadir.
   \item El formato YAML es totalmente estructurado pero legible por
     humanos, por lo que permite detectar y corregir errores 
     manualmente, 
   \item y se puede vertir a una base de datos automáticamente.
-  \item Hice un programa \Verb|yaml2db.pl| para hacer una base de
-    datos \verb|sqlite3|.
   \item Mis programas son sólo {\em demostraciones de concepto}. Se
     pueden mejorar y extender.
   \end{itemize}
 \end{frame}
-\begin{frame}{Conclusiones}
+\begin{frame}[fragile]{Conclusiones}
   \begin{itemize}
+  \item Hice un programa \Verb|yaml2db.pl| para hacer una base de
+    datos \verb|sqlite3|.
   \item Con comandos SQL se puede manipular la base de datos agregándo
     nombres canónicos y campos adicionales, evitando repeticiones.
   \item Estas bases de datos podrían importarse automáticamente a los
@@ -321,6 +397,10 @@ $ sqlite3 arts.db 'UPDATE revistas
   \item Lista de correos \Verb+http://em.fis.unam.mx/pipermail/cvu+
   \item Convertidor CV a YAML
     \Verb+http://bit.ly/2tUieuF+
+  \item Convertidor APA a YAML
+    \Verb+http://bit.ly/2tWXOND+
+  \item Convertidor Nature a YAML
+    \Verb+http://bit.ly/2f5SaWF+
   \item Convertidor YAML a base de datos
     \Verb+http://bit.ly/2eYkdHT+
   \item Esta presentación
