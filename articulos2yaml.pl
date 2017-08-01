@@ -16,11 +16,10 @@ my @articulos;
 while(my $articulo=extract_bracketed($articulos,'[]','(?ms:.*?)(?=\[)')){
     push @articulos, $articulo;
 }
-#my $last=$articulos[-1];
-#say $last;
+
 foreach(@articulos){
     my %struct;
-    s/\s+/ /gms; #quita cambios de línea
+    s/\s+/ /gms; #quita cambios de línea y junta espacios en 1.
     $_=substr($_, 1,-1);
     my $titulo=extract_bracketed($_,'[]','(.*?)(?=\[)');
     $titulo=~s/^\[\s*(.*)\s*\]$/$1/;
