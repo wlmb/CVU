@@ -22,8 +22,10 @@ my $dbh=DBI->connect("DBI:SQLite:dbname=$dbname","","", {
 # crea las tablas
 my $stc=qq(CREATE TABLE IF NOT EXISTS artículos
  (
+  rowid INTEGER PRIMARY KEY AUTOINCREMENT,
   título,
-  autores,
+  primerautor,
+  últimoautor,
   revista,
   año, 
   páginas,
@@ -34,14 +36,25 @@ die "Falló la creación de la tabla de artículos: $DBI::errstr"
     unless $dbh->do($stc) >= 0;
 $stc=qq(CREATE TABLE IF NOT EXISTS autores
  (
+  rowid INTEGER PRIMARY KEY AUTOINCREMENT,
   autor,
   autorcanónico
   )
 );
 die "Falló la creación de la tabla de autores: $DBI::errstr" 
     unless $dbh->do($stc) >= 0;
+$stc=qq(CREATE TABLE IF NOT EXISTS listaAutores
+ (
+  rowid INTEGER PRIMARY KEY AUTOINCREMENT,
+  autor, 
+  artículo
+  )
+);
+die "Falló la creación de la tabla de listaAutores: $DBI::errstr" 
+    unless $dbh->do($stc) >= 0;
 $stc=qq(CREATE TABLE IF NOT EXISTS revistas
  (
+  rowid INTEGER PRIMARY KEY AUTOINCREMENT,
   revista,
   revistacanónica
   )
@@ -50,28 +63,38 @@ die "Falló la creación de la tabla de revistas: $DBI::errstr"
     unless $dbh->do($stc) >= 0;
 
 # prepare for dbas interactions.
-my $readar=qq(SELECT ROWID FROM artículos WHERE
+my $readar=qq(SELECT rowid FROM artículos WHERE
                 revista IN
-                (SELECT ROWID from revistas WHERE revista LIKE ?)
+                (SELECT rowid from revistas WHERE revista LIKE ?)
                 AND volumen LIKE ? 
                 AND páginas LIKE ?);
 my $strar=$dbh->prepare($readar);
 my $writear=qq(
-            INSERT INTO artículos (título,autores,revista,año,páginas,volumen)
-            VALUES (?,?,?,?,?,?));
+            INSERT INTO artículos 
+            (título,primerautor,últimoautor,revista,año,páginas,volumen)
+            VALUES (?,?,?,?,?,?,?));
 my $stwar=$dbh->prepare($writear);
-my $readrev=qq(SELECT ROWID FROM revistas
+my $readrev=qq(SELECT rowid FROM revistas
                      WHERE revista LIKE ?);
 my $strrev=$dbh->prepare($readrev);
 my $writerev=qq(INSERT INTO revistas (revista, revistacanónica)
                       VALUES (?,?));
 my $stwrev=$dbh->prepare($writerev);
-my $readau=qq(SELECT ROWID FROM autores
+my $readau=qq(SELECT rowid FROM autores
                      WHERE autor LIKE ?);
 my $strau=$dbh->prepare($readau);
 my $writeau=qq(INSERT INTO autores (autor, autorcanónico)
                       VALUES (?,?));
 my $stwau=$dbh->prepare($writeau);
+my $readauid=qq(SELECT seq FROM sqlite_sequence 
+                       WHERE name='listaAutores');   
+my $strauid=$dbh->prepare($readauid);
+my $readarid=qq(SELECT seq FROM sqlite_sequence 
+                       WHERE name='artículos');   
+my $starid=$dbh->prepare($readarid);
+my $writearid=qq(INSERT INTO listaAutores (autor,artículo)
+                             VALUES (?, ?));
+my $stwarid=$dbh->prepare($writearid);
 
 
 foreach(@{$yaml->[0]->{artículos}}){
@@ -81,11 +104,23 @@ foreach(@{$yaml->[0]->{artículos}}){
 	my $autorId=getautorId($_);
 	push @autorIds, $autorId;
     }
-    my $autorIds=join ",",@autorIds;
+    #my $autorIds=join ",",@autorIds;
     $strar->execute($_->{revista}, $_->{volumen}, $_->{páginas});
     my ($id)=$strar->fetchrow_array;
     unless($id) {
-	$stwar->execute($_->{título}, $autorIds, $revistaId,$_->{año},
+	$strauid->execute;
+	my ($primerautor)=$strauid->fetchrow_array;
+	$primerautor++;
+	$starid->execute;
+	my($artid)=$starid->fetchrow_array;
+	$artid++;
+	foreach(@autorIds){
+	    $stwarid->execute($_,$artid);
+	}
+	$strauid->execute;
+	my ($ultimoautor)=$strauid->fetchrow_array;
+	$stwar->execute($_->{título}, $primerautor, $ultimoautor,
+			$revistaId,$_->{año},
 		      $_->{páginas}, $_->{volumen});
     }
 }
