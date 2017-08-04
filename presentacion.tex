@@ -125,7 +125,7 @@
   
 \end{frame}
 \begin{frame}[fragile,shrink=10]{Extracción automática a YAML}
-  Programa articulos2yaml.pl
+  Programa articulos2yaml.pl, 60 líneas.
   \begin{Verbatim}[fontsize=\small]
 #!/usr/bin/env perl
 use warnings;
@@ -233,7 +233,7 @@ Mochán], [Physical Review B] \vol[ 47],[ 8528] ([1993]).
   \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Base de datos}
-  Programa yaml2db.pl
+  Programa yaml2db.pl, 164 líneas
   \begin{Verbatim}
 $ # Crea y llena una base de datos
 $ ./yaml2db.pl -y arts.yaml -d arts.db
@@ -306,7 +306,23 @@ $ sqlite3 arts.db 'UPDATE revistas
    revistacanónica LIKE "Physical Review Letters"'
   \end{Verbatim}
 \end{frame}
-\begin{frame}[fragile,shrink=10]{Formato APA}
+\begin{frame}[fragile]{Generalización}
+  \begin{itemize}
+  \item El mismo usuario puede definir en qué formato está su CV.
+  \item Yo usé\\
+    \Verb+.Formato: [[título][autores][revista][volumen]+
+         \Verb+      [páginas][año]]+
+  \item Otros usuarios podrían preferir\\
+    \Verb+.Formato: [[autores][título][revista][volumen]+
+         \Verb+       [páginas][año]]+
+  \item o\\
+    \Verb+.Formato: [[autores][revista][volumen][año]+
+         \Verb+       [páginas][título]]+
+  \item Cada usuario puede definir el formato a emplear para
+    interpretar su CV.
+  \end{itemize}
+\end{frame}
+\begin{frame}[fragile,shrink=10]{Formatos estandarizados}{APA}
   \begin{itemize}
   \item El programa \Verb+apa2yaml.pl+ $\sim$~50 líneas) procesa artículos
     en el formato de la American Psychological Association. 
@@ -332,7 +348,7 @@ permeability. Metamaterials, 3(1),
   \end{Verbatim}
   \end{itemize}
 \end{frame}
-\begin{frame}[fragile]{Formato NATURE}
+\begin{frame}[fragile]{Formatos estandarizados}{NATURE}
 \begin{itemize}
 \item El programa \Verb+nature2yaml.pl+ ($\sim$50 líneas) procesa artículos
   en el formato recomendado por Nature. 
@@ -363,12 +379,17 @@ permeability. Waves in Random and Complex Media 17, 653–697 (2007).
   \item Con muy poco esfuerzo se puede añadir estructura a un CV
     ordinario para automatizar su proceso.
   \item Hice un programa \Verb|articulos2yaml.pl| que convierte la
-    lista de artículos de un CV del formato {\em título, autores,
-      revista volumen, páginas (año)} a YAML.
+    lista de artículos de un CV del formato
+    [[título][autores][revista][volumen][páginas][año]] a YAML.
+  \item Lo generalicé a {\em [[campo1][campo2][campo3]\ldots]}
   \item Hice programas análogos \Verb+nature2yaml.pl+ y
     \Verb+apa2yaml.pl+ que traducen automáticamente del 
     formato recomendado por APA y por Nature a YAML.
   \item Otros formatos son triviales de añadir.
+  \end{itemize}
+\end{frame}
+\begin{frame}[fragile]{Conclusiones}
+  \begin{itemize}
   \item El formato YAML es totalmente estructurado pero legible por
     humanos, por lo que permite detectar y corregir errores 
     manualmente, 
@@ -378,18 +399,18 @@ permeability. Waves in Random and Complex Media 17, 653–697 (2007).
   \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Conclusiones}
-  \begin{itemize}
-  \item Hice un programa \Verb|yaml2db.pl| para hacer una base de
-    datos \verb|sqlite3|.
-  \item Con comandos SQL se puede manipular la base de datos agregándo
-    nombres canónicos y campos adicionales, evitando repeticiones.
-  \item Estas bases de datos podrían importarse automáticamente a los
-    CVU's de CONACyT.
-  \item Las pocas labores repetitivas requeridas (p. ej., añadir
-    corchetes al CV y canonizar nombres) pueden llevarse a cabo
-    rápidamente por un capturista o personal secretarial con un mínimo
-    de capacitación.
-  \end{itemize}
+    \begin{itemize}
+    \item Hice un programa \Verb|yaml2db.pl| para hacer una base de
+      datos \verb|sqlite3|.
+    \item Con comandos SQL se puede manipular la base de datos agregándo
+      nombres canónicos y campos adicionales, evitando repeticiones.
+    \item Estas bases de datos podrían importarse automáticamente a los
+      CVU's de CONACyT.
+    \item Las pocas labores repetitivas requeridas (p. ej., añadir
+      corchetes al CV y canonizar nombres) pueden llevarse a cabo
+      rápidamente por un capturista o personal secretarial con un mínimo
+      de capacitación.
+    \end{itemize}
 \end{frame}
 \begin{frame}[fragile]{Ligas relacionadas}
   \begin{itemize}
