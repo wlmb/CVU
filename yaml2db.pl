@@ -24,10 +24,10 @@ my $stc=qq(CREATE TABLE IF NOT EXISTS artículos
  (
   rowid INTEGER PRIMARY KEY AUTOINCREMENT,
   título,
-  primerautor,
-  últimoautor,
-  revista,
-  año, 
+  primerautor INTEGER,
+  últimoautor INTEGER,
+  revista INTEGER,
+  año INTEGER, 
   páginas,
   volumen
   )
@@ -46,8 +46,8 @@ die "Falló la creación de la tabla de autores: $DBI::errstr"
 $stc=qq(CREATE TABLE IF NOT EXISTS listaAutores
  (
   rowid INTEGER PRIMARY KEY AUTOINCREMENT,
-  autor, 
-  artículo
+  autor INTEGER, 
+  artículo INTEGER
   )
 );
 die "Falló la creación de la tabla de listaAutores: $DBI::errstr" 
