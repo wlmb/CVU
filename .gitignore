@@ -1,0 +1,17 @@
+*/bibliografia_pineda.xml
+*.fdb_latexmk
+*.fls
+*.out
+*.aux
+*.log
+*.swp
+*.swo
+*.bbl
+*.blg
+*.png
+*.tex.bak
+*.run.xml
+*.tex.swo
+
+
+
