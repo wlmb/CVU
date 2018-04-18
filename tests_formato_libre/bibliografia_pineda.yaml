@@ -1,0 +1,895 @@
+---
+references:
+- id: ngrams2018
+  type: article-journal
+  author:
+  - family: Morales
+    given: Jose A.
+  - family: Colman
+    given: Ewan
+  - family: Sanchez
+    given: Sergio
+  - family: Sanchez-Puig
+    given: Fernanda
+  - family: Pineda
+    given: Carlos
+  - family: Iñiguez
+    given: Gerardo
+  - family: Cocho
+    given: Germinal
+  - family: Flores
+    given: Jorge
+  - family: Gershenson
+    given: Carlos
+  issued:
+  - year: '2018'
+  title: Rank dynamics of word usage at multiple scales
+  container-title: rontiers in Physics
+  note: submitted
+
+- id: 2017arXiv170806208D
+  type: article-journal
+  author:
+  - family: Davalos
+    given: David
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2017'
+    month: Dec
+  title: Quantum non-markovianity and localization
+  container-title: Phys. Rev. A
+  publisher: American Physical Society
+  page: '062127'
+  volume: '96'
+  issue: '6'
+  URL: https://link.aps.org/doi/10.1103/PhysRevA.96.062127
+  DOI: 10.1103/PhysRevA.96.062127
+
+- id: 2017arXiv170806945S
+  type: article-journal
+  author:
+  - family: Sanchez
+    given: S.
+  - family: Cocho
+    given: G.
+  - family: Flores
+    given: J.
+  - family: Gershenson
+    given: C.
+  - family: Iniguez
+    given: G.
+  - family: Pineda
+    given: C.
+  issued:
+  - year: '2017'
+    month: '8'
+  title: <span class="nocase">Trajectory stability in the traveling salesman problem</span>
+  container-title: Complexity (accepted)
+  keyword: Nonlinear Sciences - Adaptation and Self-Organizing Systems
+
+- id: pinedaseligmanELAF
+  type: paper-conference
+  author:
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2008'
+  title: Random matrix models for decoherence and fidelity decay in quantum information
+    systems
+  container-title: 'LATIN-aMERICAN sCHOOL oF pHYSICS xXXVIII eLAF: Quantum information
+    and quantum cold matter'
+  publisher: AIP
+  publisher-place: El Colegio Nacional (México)
+  page: '47-75'
+  volume: '994'
+  keyword: quantum theory; quantum communication; matrix algebra
+  DOI: 10.1063/1.2907760
+
+- id: pinedaRMTshort
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2007'
+  title: Bell pair in a generic random matrix environment
+  container-title: Phys. Rev. A
+  publisher: APS
+  page: '012106'
+  volume: '75'
+  issue: '1'
+  keyword: Bell theorem; quantum computing; Monte Carlo methods; random processes
+
+- id: pineda:012305
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2006'
+  title: Evolution of pairwise entanglement in a coupled $n$-body system
+  container-title: Phys. Rev. A
+  publisher: APS
+  page: '012305'
+  volume: '73'
+  issue: '1'
+  keyword: quantum entanglement; quantum computing; Bell theorem; Ising model; chaos
+
+- id: pinedalong
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Gorin
+    given: T.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2007'
+    month: April
+  title: 'Decoherence of two-qubit systems: A random matrix description'
+  title-short: Decoherence of two-qubit systems
+  container-title: New J. Phys.
+  publisher: Institute of Physics Publishing
+  page: '106'
+  volume: '9'
+  issue: '4'
+  DOI: 10.1088/1367-2630/9/4/106
+  ISSN: '1367-2630'
+
+- id: pp2007
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Prosen
+    given: T.
+  issued:
+  - year: '2007'
+  title: Universal and nonuniversal level statistics in a chaotic quantum spin chain
+  container-title: Phys. Rev. E
+  publisher: APS
+  page: '061127'
+  volume: '76'
+  issue: '6'
+  keyword: chaos; Ising model; matrix algebra; quantum computing; quantum theory;
+    random processes
+  DOI: 10.1103/PhysRevE.76.061127
+
+- id: pineda:066120
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Schäfer
+    given: R.
+  - family: Prosen
+    given: T.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2006'
+  title: Verification of generic fidelity recovery in a dynamical system
+  container-title: Phys. Rev. E
+  publisher: APS
+  page: '066120'
+  volume: '73'
+  issue: '6'
+  keyword: Ising model; nonlinear dynamical systems; matrix algebra
+
+- id: pinedatesis
+  type: thesis
+  author:
+  - family: Pineda
+    given: C.
+  issued:
+  - year: '2007'
+    month: December
+  title: One, two, and n qubit decoherence
+  publisher: Universidad Nacional Autónoma de México
+  genre: PhD thesis
+  note: arXiv:0711.4642
+
+- id: correlationsRMTold
+  type: article-journal
+  author:
+  - family: Kohler
+    given: H.
+  - family: Pineda
+    given: C.
+  - family: Guhr
+    given: T.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2007'
+  title: Revival of parametric correlations in random matrix hamiltonians
+  note: To be published
+
+- id: goegue
+  type: article-journal
+  author:
+  - family: Kaplan
+    given: L.
+  - family: Leyvraz
+    given: F.
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2007'
+  title: A trivial observation on time-reversal in random matrix theory
+  container-title: J. Phys. A
+  page: F1063-F1068
+  volume: '40'
+  issue: '49'
+  abstract: 'It is commonly thought that a state-dependent quantity, after being
+    averaged over a classical ensemble of random Hamiltonians, will always become
+    independent of the state. We point out that this is in general incorrect: if the
+    ensemble of Hamiltonians is time-reversal invariant, and the quantity involves
+    the state in higher than bilinear order, then we show that the quantity is only
+    a constant over the orbits of the invariance group on the Hilbert space. Examples
+    include fidelity and decoherence in appropriate models.'
+  URL: http://stacks.iop.org/1751-8121/40/F1063
+
+- id: GPS-letter
+  type: article-journal
+  author:
+  - family: Gorin
+    given: T.
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2007'
+  title: Decoherence of an $n$-qubit quantum memory
+  container-title: Phys. Rev. Lett.
+  page: '240405'
+  volume: '99'
+  issue: '24'
+  DOI: 10.1103/PhysRevLett.99.240405
+
+- id: Berman01
+  type: article-journal
+  author:
+  - family: Berman
+    given: Gennady P.
+  - family: Kamenev
+    given: Dimity I.
+  - family: Kassman
+    given: Richard B.
+  - family: Pineda
+    given: Carlos
+  - family: Tsifrinovich
+    given: Vladimir I.
+  issued:
+  - year: '2003'
+  title: Method for implementation of universal quantum logic gates in a scalable
+    Ising spin quantum computer
+  container-title: Int. J. Quantum Inf.
+  page: '51-77'
+  volume: '1'
+  issue: '1'
+
+- id: Pineda01
+  type: article-journal
+  author:
+  - family: Celardo
+    given: G. L.
+  - family: Pineda
+    given: C.
+  - family: Žnidarič
+    given: M.
+  issued:
+  - year: '2005'
+  title: Stability of quantum Fourier transformation on Ising quantum computer
+  container-title: Int. J. Quantum Inf.
+  page: '441'
+  volume: '3'
+  issue: '3'
+
+- id: matracas2
+  type: paper-conference
+  author:
+  - family: Acevedo
+    given: W.
+  - family: Dittrich
+    given: T.
+  - family: Pineda
+    given: C.
+  editor:
+  - family: Beck
+    given: F.
+  - family: Hutt
+    given: M.-Th.
+  - family: Luttge
+    given: U.
+  issued:
+  - year: '2003'
+  title: 'Chaotic ratchets: Dissipative versus hamiltonian, classical versus quantum'
+  title-short: Chaotic ratchets
+  container-title: Nova acta leopoldina nF
+  publisher: Wissenschaftliche Verlagsgesellschaft
+  publisher-place: Stuttgart
+  page: '279-291'
+  volume: '88'
+  note: 'Special edition: Nonlinear Dynamics and the Spatiotemporal Principles of
+    Biology'
+  URL: http://www.cicc.unam.mx/\textasciitilde carlosp/various/18-acevedo.pdf
+
+- id: matraca1
+  type: article-journal
+  author:
+  - family: Acevedo
+    given: W.
+  - family: Pineda
+    given: C.
+  - family: Dittrich
+    given: T.
+  issued:
+  - year: '2002'
+  title: Matracas clasicas hamiltonianas y disipativas
+  container-title: Revista Colombiana de Fisica
+  page: '380-384'
+  volume: '34'
+  issue: '1'
+  URL: http://www.cicc.unam.mx/\textasciitilde carlosp/various/revistacolombiana.pdf
+
+- id: correlationsRMT
+  type: article-journal
+  author:
+  - family: Kohler
+    given: H.
+  - family: Smolyarenko
+    given: I. E.
+  - family: Pineda
+    given: C.
+  - family: Guhr
+    given: T.
+  - family: Leyvraz
+    given: F.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2008'
+  title: Surprising relations between parametric level correlations and fidelity decay
+  container-title: Phys. Rev. Lett.
+  publisher: APS
+  page: '190404'
+  volume: '100'
+  issue: '19'
+  URL: http://link.aps.org/abstract/PRL/v100/e190404
+  DOI: 10.1103/PhysRevLett.100.190404
+
+- id: Gorin:arXiv0807.4913
+  type: article-journal
+  author:
+  - family: Gorin
+    given: T
+  - family: Pineda
+    given: C
+  - family: Kohler
+    given: H
+  - family: Seligman
+    given: T H
+  issued:
+  - year: '2008'
+  title: A random matrix theory of decoherence
+  container-title: New J. Phys.
+  page: '115016'
+  volume: '10'
+  issue: '11'
+  abstract: Random matrix theory is used to represent generic loss of coherence of
+    a fixed central system coupled to a quantum-chaotic environment, represented by
+    a random matrix ensemble, via random interactions. We study the average density
+    matrix arising from the ensemble induced, in contrast to previous studies where
+    the average values of purity, concurrence and entropy were considered; we further
+    discuss when one or the other approach is relevant. The two approaches agree in
+    the limit of large environments. Analytic results for the average density matrix
+    and its purity are presented in linear response approximation. The two-qubit system
+    is analysed, mainly numerically, in more detail.
+  URL: http://stacks.iop.org/1367-2630/10/115016
+
+- id: 2009arXiv0905.0669P
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Barthel
+    given: Thomas
+  - family: Eisert
+    given: Jens
+  issued:
+  - year: '2010'
+    month: May
+  title: Unitary circuits for strongly correlated fermions
+  container-title: Phys. Rev. A
+  publisher: American Physical Society
+  page: '050303'
+  volume: '81'
+  issue: '5'
+  DOI: 10.1103/PhysRevA.81.050303
+
+- id: 2009arXiv0907.3689B
+  type: article-journal
+  author:
+  - family: Barthel
+    given: T.
+  - family: Pineda
+    given: C.
+  - family: Eisert
+    given: J.
+  issued:
+  - year: '2009'
+  title: Contraction of fermionic operator circuits and the simulation of strongly
+    correlated fermions
+  container-title: Phys. Rev. A
+  publisher: APS
+  page: '042333'
+  volume: '80'
+  issue: '4'
+  keyword: fermion systems; quantum computing; quantum entanglement; renormalisation
+  URL: http://link.aps.org/abstract/PRA/v80/e042333
+  DOI: 10.1103/PhysRevA.80.042333
+
+- id: 2010arXiv1006.4651D
+  type: article-journal
+  author:
+  - family: DiGuglielmo
+    given: J.
+  - family: Samblowski
+    given: A.
+  - family: Hage
+    given: B.
+  - family: Pineda
+    given: C.
+  - family: Eisert
+    given: J.
+  - family: Schnabel
+    given: R.
+  issued:
+  - year: '2011'
+    month: Dec
+  title: Experimental unconditional preparation and detection of a continuous bound
+    entangled state of light
+  container-title: Phys. Rev. Lett.
+  publisher: American Physical Society
+  page: '240503'
+  volume: '107'
+  issue: '24'
+  URL: http://link.aps.org/doi/10.1103/PhysRevLett.107.240503
+  DOI: 10.1103/PhysRevLett.107.240503
+
+- id: 2010PhRvA..81e0303P
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Barthel
+    given: T.
+  - family: Eisert
+    given: J.
+  issued:
+  - year: '2010'
+    month: '5'
+  title: <span class="nocase">Unitary circuits for strongly correlated fermions</span>
+  container-title: Phys. Rev. A
+  page: '050303-+'
+  volume: '81'
+  issue: '5'
+  keyword: Quantum computation, Quantum statistical mechanics, Strongly correlated
+    electron systems; heavy fermions
+  DOI: 10.1103/PhysRevA.81.050303
+
+- id: 2009PhRvA..80d2333B
+  type: article-journal
+  author:
+  - family: Barthel
+    given: T.
+  - family: Pineda
+    given: C.
+  - family: Eisert
+    given: J.
+  issued:
+  - year: '2009'
+    month: '10'
+  title: <span class="nocase">Contraction of fermionic operator circuits and the simulation
+    of strongly correlated fermions</span>
+  container-title: Phys. Rev. A
+  page: '042333-+'
+  volume: '80'
+  issue: '4'
+  keyword: Quantum information, Computational techniques; simulations, Lattice fermion
+    models
+  DOI: 10.1103/PhysRevA.80.042333
+
+- id: 2008NJPh...10k5016G
+  type: article-journal
+  author:
+  - family: Gorin
+    given: T.
+  - family: Pineda
+    given: C.
+  - family: Kohler
+    given: H.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2008'
+    month: '11'
+  title: <span class="nocase">A random matrix theory of decoherence</span>
+  container-title: New J. Phys.
+  page: '115016-+'
+  volume: '10'
+  issue: '11'
+  DOI: 10.1088/1367-2630/10/11/115016
+
+- id: 2007PhRvE..76f1127P
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Prosen
+    given: T.
+  issued:
+  - year: '2007'
+    month: '12'
+  title: <span class="nocase">Universal and nonuniversal level statistics in a chaotic
+    quantum spin chain</span>
+  container-title: Phys. Rev. E
+  page: '061127-+'
+  volume: '76'
+  issue: '6'
+  keyword: Quantum statistical mechanics, Quantum chaos; semiclassical methods, Numerical
+    simulations of chaotic systems
+  DOI: 10.1103/PhysRevE.76.061127
+
+- id: PhysRevLett.107.080404
+  type: article-journal
+  author:
+  - family: Znidaric
+    given: M.
+  - family: Pineda
+    given: C.
+  - family: García-Mata
+    given: I.
+  issued:
+  - year: '2011'
+    month: Aug
+  title: Non-markovian behavior of small and large complex quantum systems
+  container-title: Phys. Rev. Lett.
+  publisher: American Physical Society
+  page: '080404'
+  volume: '107'
+  issue: '8'
+  DOI: 10.1103/PhysRevLett.107.080404
+
+- id: PhysRevA.86.022114
+  type: article-journal
+  author:
+  - family: García-Mata
+    given: Ignacio
+  - family: Pineda
+    given: Carlos
+  - family: Wisniacki
+    given: Diego
+  issued:
+  - year: '2012'
+    month: Aug
+  title: Non-markovian quantum dynamics and classical chaos
+  container-title: Phys. Rev. A
+  publisher: American Physical Society
+  page: '022114'
+  volume: '86'
+  issue: '2'
+  URL: http://link.aps.org/doi/10.1103/PhysRevA.86.022114
+  DOI: 10.1103/PhysRevA.86.022114
+
+- id: 2012arXiv1204.3614G
+  type: article-journal
+  author:
+  - family: Garcia-Mata
+    given: I.
+  - family: Pineda
+    given: C.
+  - family: Wisniacki
+    given: D. A.
+  issued:
+  - year: '2012'
+    month: '4'
+  title: <span class="nocase">Non-Markovian Quantum Dynamics and Classical Chaos</span>
+  container-title: arXiv:1204.3614; Accepted in PRA
+  keyword: Quantum Physics, Nonlinear Sciences - Chaotic Dynamics
+
+- id: capitulokaren
+  type: chapter
+  author:
+  - family: Pineda
+    given: Carlos
+  editor:
+  - family: Miramontes
+    given: O.
+  - family: Volke
+    given: K.
+  issued:
+  - year: '2013'
+  title: Información cuántica
+  container-title: Fronteras de la física en el siglo xXI
+  publisher: CopIt arXives, Mexico
+  URL: http://scifunam.fisica.unam.mx/mir/copit/TS0011ES/TS0011ES.html
+  ISBN: '978-1-938128-03-5'
+
+- id: 2013arXiv1306.5980G
+  type: article-journal
+  author:
+  - family: Garcia-Mata
+    given: I.
+  - family: Pineda
+    given: C.
+  - family: Wisniacki
+    given: D. A.
+  issued:
+  - year: '2014'
+  title: Quantum non-markovian behavior at the chaos border
+  container-title: J. Phys. A
+  page: '115301'
+  volume: '47'
+  issue: '11'
+  abstract: In this work we study the non-Markovian behavior of a qubit coupled to
+    an environment in which the corresponding classical dynamics change from integrable
+    to chaotic. We show that in the transition region, where the dynamics has both
+    regular islands and chaotic areas, the average non-Markovian behavior is enhanced
+    to values even larger than those in the regular regime. This effect can be related
+    to the non-Markovian behavior as a function of the initial state of the environment,
+    where maxima are attained at the regions dividing separate areas in classical
+    phase space, particularly at the borders between chaotic and regular regions.
+    Moreover, we show that the fluctuations of the fidelity of the environment—which
+    determine the non-Markovianity measure—give a precise image of the classical phase
+    portrait.
+  URL: http://stacks.iop.org/1751-8121/47/i=11/a=115301
+
+- id: 2014arXiv1407.7052P
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2015'
+    month: '7'
+  title: <span class="nocase">Random density matrices versus random evolution of open
+    system</span>
+  container-title: J. Phys. A
+  page: '425005'
+  volume: '48'
+  keyword: Quantum Physics
+
+- id: cocho:idiomas
+  type: article-journal
+  author:
+  - family: Cocho
+    given: Jorge AND Gershenson
+    suffix: Germinal AND Flores
+  issued:
+  - year: '2015'
+    month: '04'
+  title: 'Rank diversity of languages: Generic behavior in computational linguistics'
+  title-short: Rank diversity of languages
+  container-title: PLoS ONE
+  publisher: Public Library of Science
+  page: 'e0121898'
+  volume: '10'
+  issue: '4'
+  abstract: '&lt;p&gt;Statistical studies of languages have focused on the rank-frequency
+    distribution of words. Instead, we introduce here a measure of how word ranks
+    change in time and call this distribution &lt;italic&gt;rank diversity&lt;/italic&gt;.
+    We calculate this diversity for books published in six European languages since
+    1800, and find that it follows a universal lognormal distribution. Based on the
+    mean and standard deviation associated with the lognormal distribution, we define
+    three different word regimes of languages: “heads” consist of words which almost
+    do not change their rank in time, “bodies” are words of general use, while “tails”
+    are comprised by context-specific words and vary their rank considerably in time.
+    The heads and bodies reflect the size of language cores identified by linguists
+    for basic communication. We propose a Gaussian random walk model which reproduces
+    the rank variation of words in time and thus the diversity. Rank diversity of
+    words can be understood as the result of random variations in rank, where the
+    size of the variation depends on the rank itself. We find that the core size is
+    similar for all languages studied.&lt;/p&gt;'
+  URL: http://dx.doi.org/10.1371%2Fjournal.pone.0121898
+  DOI: 10.1371/journal.pone.0121898
+
+- id: cochodos
+  type: article-journal
+  author:
+  - family: Morales
+    given: José A.
+  - family: Sánchez
+    given: Sergio
+  - family: Flores
+    given: Jorge
+  - family: Pineda
+    given: Carlos
+  - family: Gershenson
+    given: Carlos
+  - family: Cocho
+    given: Germinal
+  - family: Zizumbo
+    given: Jerónimo
+  - family: Rodríguez
+    given: Rosalío F.
+  - family: Iñiguez
+    given: Gerardo
+  issued:
+  - year: '2016'
+  title: Generic temporal features of performance rankings in sports and games
+  container-title: EPJ Data Science
+  page: '33'
+  volume: '5'
+  issue: '1'
+  URL: http://dx.doi.org/10.1140/epjds/s13688-016-0096-y
+  DOI: 10.1140/epjds/s13688-016-0096-y
+  ISSN: '2193-1127'
+
+- id: amaro:three
+  type: article-journal
+  author:
+  - family: Amaro
+    given: J.
+  - family: Pineda
+    given: C
+  issued:
+  - year: '2015'
+  title: <span class="nocase">Multipartite entanglement dynamics in a cavity</span>
+  container-title: Phys. Scr.
+  page: '068019'
+  volume: '90'
+  keyword: Quantum Physics
+  URL: http://stacks.iop.org/1402-4896/90/i=6/a=068019
+
+- id: pineda:definitions:nm:2015
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Gorin
+    given: Thomas
+  - family: Davalos
+    given: David
+  - family: Wisniacki
+    given: Diego A.
+  - family: García-Mata
+    given: Ignacio
+  issued:
+  - year: '2016'
+    month: Feb
+  title: Measuring and using non-markovianity
+  container-title: Phys. Rev. A
+  publisher: American Physical Society
+  page: '022117'
+  volume: '93'
+  issue: '2'
+  URL: http://link.aps.org/doi/10.1103/PhysRevA.93.022117
+  DOI: 10.1103/PhysRevA.93.022117
+
+- id: njp:villasenor:prosen
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C.
+  - family: Prosen
+    given: T.
+  - family: Villasenor
+    given: 'E.'
+  issued:
+  - year: '2014'
+    month: '9'
+  title: '<span class="nocase">Two dimensional kicked quantum Ising model: dynamical
+    phase transitions</span>'
+  container-title: New J. Phys.
+  page: '123044'
+  volume: '16'
+  issue: '12'
+  keyword: Condensed Matter - Statistical Mechanics, Quantum Physics
+  URL: http://stacks.iop.org/1367-2630/16/i=12/a=123044
+
+- id: 2015arXiv150702529G
+  type: article-journal
+  author:
+  - family: Garrido
+    given: Nephtalí
+  - family: Gorin
+    given: Thomas
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2016'
+    month: Jan
+  title: Transition from non-markovian to markovian dynamics for generic environments
+  container-title: Phys. Rev. A
+  publisher: American Physical Society
+  page: '012113'
+  volume: '93'
+  issue: '1'
+  URL: http://link.aps.org/doi/10.1103/PhysRevA.93.012113
+  DOI: 10.1103/PhysRevA.93.012113
+
+- id: 2015arXiv151207683G
+  type: article-journal
+  author:
+  - family: González-Gutiérrez
+    given: C.
+  - family: Villaseñor
+    given: 'E.'
+  - family: Pineda
+    given: C.
+  - family: Seligman
+    given: T. H.
+  issued:
+  - year: '2016'
+  title: '<span class="nocase">Stabilizing coherence with nested environments: a
+    numerical study using kicked Ising models</span>'
+  container-title: Phys. Scr.
+  page: '083001'
+  volume: '91'
+  issue: '8'
+  note: arXiv:1512.07683
+  keyword: Quantum Physics
+  URL: http://stacks.iop.org/1402-4896/91/i=8/a=083001
+
+- id: metrologiaprl
+  type: article-journal
+  author:
+  - family: Martinez
+    given: 'E.'
+  - family: Pineda
+    given: C.
+  - family: Leyvraz
+    given: F.
+  - family: Barberis-Blostein
+    given: P.
+  issued:
+  - year: '2017'
+    month: Jan
+  title: <span class="nocase">Quantum estimation of unknown parameters</span>
+  container-title: Phys. Rev. A
+  publisher: American Physical Society
+  page: '012136'
+  volume: '95'
+  issue: '1'
+  URL: http://link.aps.org/doi/10.1103/PhysRevA.95.012136
+  DOI: 10.1103/PhysRevA.95.012136
+
+- id: 2016arXiv160309417R
+  type: article-journal
+  author:
+  - family: Rosado
+    given: A. S.
+  - family: Franco-Villafañe
+    given: J. A.
+  - family: Pineda
+    given: C.
+  - family: Sadurní
+    given: 'E.'
+  issued:
+  - year: '2016'
+    month: Jul
+  title: Stern-gerlach splitters for lattice quasispin
+  container-title: Phys. Rev. B
+  publisher: American Physical Society
+  page: '045129'
+  volume: '94'
+  issue: '4'
+  note: arXiv:1603.09417
+  URL: http://link.aps.org/doi/10.1103/PhysRevB.94.045129
+  DOI: 10.1103/PhysRevB.94.045129
+...
