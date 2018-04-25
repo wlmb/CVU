@@ -1,0 +1,659 @@
+---
+references:
+- id: barthel2009contraction
+  type: article-journal
+  author:
+  - family: Barthel
+    given: Thomas
+  - family: Pineda
+    given: Carlos
+  - family: Eisert
+    given: Jens
+  issued:
+  - year: '2009'
+  title: Contraction of fermionic operator circuits and the simulation of strongly
+    correlated fermions
+  container-title: Physical Review A
+  publisher: APS
+  page: '042333'
+  volume: '80'
+  issue: '4'
+
+- id: pineda2007decoherence
+  type: article-journal
+  author:
+  - family: Pineda
+    given: C
+  - family: Gorin
+    given: T
+  - family: Seligman
+    given: TH
+  issued:
+  - year: '2007'
+  title: 'Decoherence of two-qubit systems: A random matrix description'
+  title-short: Decoherence of two-qubit systems
+  container-title: New Journal of Physics
+  publisher: IOP Publishing
+  page: '106'
+  volume: '9'
+  issue: '4'
+
+- id: pineda2006evolution
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Seligman
+    given: Thomas H
+  issued:
+  - year: '2006'
+  title: Evolution of pairwise entanglement in a coupled n-body system
+  container-title: Physical Review A
+  publisher: APS
+  page: '012305'
+  volume: '73'
+  issue: '1'
+
+- id: pineda2007bell
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Seligman
+    given: Thomas H
+  issued:
+  - year: '2007'
+  title: Bell pair in a generic random matrix environment
+  container-title: Physical Review A
+  publisher: APS
+  page: '012106'
+  volume: '75'
+  issue: '1'
+
+- id: gorin2007decoherence
+  type: article-journal
+  author:
+  - family: Gorin
+    given: Thomas
+  - family: Pineda
+    given: Carlos
+  - family: Seligman
+    given: Thomas H
+  issued:
+  - year: '2007'
+  title: Decoherence of an n-qubit quantum memory
+  container-title: Physical review letters
+  publisher: APS
+  page: '240405'
+  volume: '99'
+  issue: '24'
+
+- id: pineda2010unitary
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Barthel
+    given: Thomas
+  - family: Eisert
+    given: Jens
+  issued:
+  - year: '2010'
+  title: Unitary circuits for strongly correlated fermions
+  container-title: Physical Review A
+  publisher: APS
+  page: '050303'
+  volume: '81'
+  issue: '5'
+
+- id: celardo2005stability
+  type: article-journal
+  author:
+  - family: Celardo
+    given: Giuseppe Luca
+  - family: Pineda
+    given: Carlos
+  - family: Žnidarič
+    given: Marko
+  issued:
+  - year: '2005'
+  title: Stability of the quantum fourier transformation on the ising quantum computer
+  container-title: International Journal of Quantum Information
+  publisher: World Scientific Publishing Company
+  page: '441-462'
+  volume: '3'
+  issue: '03'
+
+- id: pineda2006verification
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Schäfer
+    given: Rudi
+  - family: Prosen
+    given: Tomaž
+  - family: Seligman
+    given: Thomas
+  issued:
+  - year: '2006'
+  title: Verification of generic fidelity recovery in a dynamical system
+  container-title: Physical Review E
+  publisher: American Physical Society
+  page: '066120'
+  volume: '73'
+  issue: '6'
+
+- id: kohler2008surprising
+  type: article-journal
+  author:
+  - family: Kohler
+    given: H
+  - family: Smolyarenko
+    given: IE
+  - family: Pineda
+    given: C
+  - family: Guhr
+    given: T
+  - family: Leyvraz
+    given: F
+  - family: Seligman
+    given: TH
+  issued:
+  - year: '2008'
+  title: Surprising relations between parametric level correlations and fidelity decay
+  container-title: Physical review letters
+  publisher: APS
+  page: '190404'
+  volume: '100'
+  issue: '19'
+
+- id: vznidarivc2011non
+  type: article-journal
+  author:
+  - family: Žnidarič
+    given: Marko
+  - family: Pineda
+    given: Carlos
+  - family: Garcia-Mata
+    given: Ignacio
+  issued:
+  - year: '2011'
+  title: Non-markovian behavior of small and large complex quantum systems
+  container-title: Physical review letters
+  publisher: American Physical Society
+  page: '080404'
+  volume: '107'
+  issue: '8'
+
+- id: pineda2007universal
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Prosen
+    given: Tomaž
+  issued:
+  - year: '2007'
+  title: Universal and nonuniversal level statistics in a chaotic quantum spin chain
+  container-title: Physical Review E
+  publisher: APS
+  page: '061127'
+  volume: '76'
+  issue: '6'
+
+- id: berman2003method
+  type: article-journal
+  author:
+  - family: Berman
+    given: Gennady P
+  - family: Kamenev
+    given: Dmitry I
+  - family: Kassman
+    given: RB
+  - family: Pineda
+    given: Carlos
+  - family: Tsifrinovich
+    given: Vladimir I
+  issued:
+  - year: '2003'
+  title: Method for implementation of universal quantum logic gates in a scalable
+    ising spin quantum computer
+  container-title: International Journal of Quantum Information
+  publisher: World Scientific Publishing Company
+  page: '51-77'
+  volume: '1'
+  issue: '01'
+
+- id: gorin2008random
+  type: article-journal
+  author:
+  - family: Gorin
+    given: T
+  - family: Pineda
+    given: C
+  - family: Kohler
+    given: H
+  - family: Seligman
+    given: TH
+  issued:
+  - year: '2008'
+  title: A random matrix theory of decoherence
+  container-title: New Journal of Physics
+  publisher: IOP Publishing
+  page: '115016'
+  volume: '10'
+  issue: '11'
+
+- id: kaplan2007trivial
+  type: article-journal
+  author:
+  - family: Kaplan
+    given: L
+  - family: Leyvraz
+    given: F
+  - family: Pineda
+    given: C
+  - family: Seligman
+    given: TH
+  issued:
+  - year: '2007'
+  title: A trivial observation on time reversal in random matrix theory
+  container-title: 'Journal of Physics A: Mathematical and Theoretical'
+  publisher: IOP Publishing
+  page: F1063
+  volume: '40'
+  issue: '49'
+
+- id: pineda2007one
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2007'
+  title: One, two, and $ n $ qubit decoherence
+  container-title: arXiv preprint arXiv:0711.4642
+
+- id: pineda2008random
+  type: paper-conference
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Seligman
+    given: Thomas H
+  issued:
+  - year: '2008'
+  title: Random matrix models for decoherence and fidelity decay in quantum information
+    systems
+  container-title: AIP conference proceedings
+  collection-number: '1'
+  publisher: AIP
+  page: '47-75'
+  volume: '994'
+
+- id: acevedo2003chaotic
+  type: article-journal
+  author:
+  - family: Acevedo
+    given: Walter
+  - family: Dittrich
+    given: Thomas
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2003'
+  title: 'Chaotic ratchets: Dissipative versus hamiltonian, classical versus quantum'
+  title-short: Chaotic ratchets
+  container-title: Nova Acta Leopoldina NF
+  page: '279-291'
+  volume: '88'
+  issue: '332'
+
+- id: acevedo2002matracas
+  type: article-journal
+  author:
+  - family: Acevedo
+    given: W
+  - family: Pineda
+    given: C
+  - family: Dittrich
+    given: T
+  issued:
+  - year: '2002'
+  title: MATRACAS cL aSICAS hAMILTONIANAS y dISIPATIVAS
+  container-title: Rev. Col. Ffs
+  page: '380-385'
+  volume: '34'
+
+- id: diguglielmo2011experimental
+  type: article-journal
+  author:
+  - family: DiGuglielmo
+    given: James
+  - family: Samblowski
+    given: Aiko
+  - family: Hage
+    given: Boris
+  - family: Pineda
+    given: Carlos
+  - family: Eisert
+    given: Jens
+  - family: Schnabel
+    given: Roman
+  issued:
+  - year: '2011'
+  title: Experimental unconditional preparation and detection of a continuous bound
+    entangled state of light
+  container-title: Physical review letters
+  publisher: American Physical Society
+  page: '240503'
+  volume: '107'
+  issue: '24'
+
+- id: garcia2012non
+  type: article-journal
+  author:
+  - family: García-Mata
+    given: Ignacio
+  - family: Pineda
+    given: Carlos
+  - family: Wisniacki
+    given: Diego
+  issued:
+  - year: '2012'
+  title: Non-markovian quantum dynamics and classical chaos
+  container-title: Physical Review A
+  publisher: American Physical Society
+  page: '022114'
+  volume: '86'
+  issue: '2'
+
+- id: garcia2014quantum
+  type: article-journal
+  author:
+  - family: García-Mata
+    given: Ignacio
+  - family: Pineda
+    given: Carlos
+  - family: Wisniacki
+    given: Diego A
+  issued:
+  - year: '2014'
+  title: Quantum non-markovian behavior at the chaos border
+  container-title: 'Journal of Physics A: Mathematical and Theoretical'
+  publisher: Iop Publishing
+  page: '115301'
+  volume: '47'
+  issue: '11'
+
+- id: pineda2015random
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Seligman
+    given: Thomas H
+  issued:
+  - year: '2015'
+  title: Random density matrices versus random evolution of open system
+  container-title: 'Journal of Physics A: Mathematical and Theoretical'
+  publisher: IOP Publishing
+  page: '425005'
+  volume: '48'
+  issue: '42'
+
+- id: pineda2014two
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Prosen
+    given: Tomaž
+  - family: Villaseñor
+    given: Eduardo
+  issued:
+  - year: '2014'
+  title: 'Two dimensional kicked quantum ising model: Dynamical phase transitions'
+  title-short: Two dimensional kicked quantum ising model
+  container-title: New Journal of Physics
+  publisher: IOP Publishing
+  page: '123044'
+  volume: '16'
+  issue: '12'
+
+- id: amaro2015multipartite
+  type: article-journal
+  author:
+  - family: Amaro
+    given: JG
+  - family: Pineda
+    given: C
+  issued:
+  - year: '2015'
+  title: Multipartite entanglement dynamics in a cavity
+  container-title: Physica Scripta
+  publisher: IOP Publishing
+  page: '068019'
+  volume: '90'
+  issue: '6'
+
+- id: cocho2015rank
+  type: article-journal
+  author:
+  - family: Cocho
+    given: Germinal
+  - family: Flores
+    given: Jorge
+  - family: Gershenson
+    given: Carlos
+  - family: Pineda
+    given: Carlos
+  - family: Sánchez
+    given: Sergio
+  issued:
+  - year: '2015'
+  title: 'Rank diversity of languages: Generic behavior in computational linguistics'
+  title-short: Rank diversity of languages
+  container-title: PloS one
+  publisher: Public Library of Science
+  page: 'e0121898'
+  volume: '10'
+  issue: '4'
+
+- id: pineda2016measuring
+  type: article-journal
+  author:
+  - family: Pineda
+    given: Carlos
+  - family: Gorin
+    given: Thomas
+  - family: Davalos
+    given: David
+  - family: Wisniacki
+    given: Diego A
+  - family: García-Mata
+    given: Ignacio
+  issued:
+  - year: '2016'
+  title: Measuring and using non-markovianity
+  container-title: Physical Review A
+  publisher: American Physical Society
+  page: '022117'
+  volume: '93'
+  issue: '2'
+
+- id: garrido2016transition
+  type: article-journal
+  author:
+  - family: Garrido
+    given: Nephtalí
+  - family: Gorin
+    given: Thomas
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2016'
+  title: Transition from non-markovian to markovian dynamics for generic environments
+  container-title: Physical Review A
+  publisher: American Physical Society
+  page: '012113'
+  volume: '93'
+  issue: '1'
+
+- id: gonzalez2016stabilizing
+  type: article-journal
+  author:
+  - family: González-Gutiérrez
+    given: C
+  - family: Villaseñor
+    given: 'E'
+  - family: Pineda
+    given: C
+  - family: Seligman
+    given: TH
+  issued:
+  - year: '2016'
+  title: 'Stabilizing coherence with nested environments: A numerical study using
+    kicked ising models'
+  title-short: Stabilizing coherence with nested environments
+  container-title: Physica Scripta
+  publisher: IOP Publishing
+  page: '083001'
+  volume: '91'
+  issue: '8'
+
+- id: rosado2016stern
+  type: article-journal
+  author:
+  - family: Rosado
+    given: AS
+  - family: Franco-Villafañe
+    given: JA
+  - family: Pineda
+    given: C
+  - family: Sadurní
+    given: 'E'
+  issued:
+  - year: '2016'
+  title: Stern-gerlach splitters for lattice quasispin
+  container-title: Physical Review B
+  publisher: American Physical Society
+  page: '045129'
+  volume: '94'
+  issue: '4'
+
+- id: morales2016generic
+  type: article-journal
+  author:
+  - family: Morales
+    given: José A
+  - family: Sánchez
+    given: Sergio
+  - family: Flores
+    given: Jorge
+  - family: Pineda
+    given: Carlos
+  - family: Gershenson
+    given: Carlos
+  - family: Cocho
+    given: Germinal
+  - family: Zizumbo
+    given: Jerónimo
+  - family: Rodríguez
+    given: Rosalío F
+  - family: Iñiguez
+    given: Gerardo
+  issued:
+  - year: '2016'
+  title: Generic temporal features of performance rankings in sports and games
+  container-title: EPJ Data Science
+  publisher: SpringerOpen
+  page: '33'
+  volume: '5'
+  issue: '1'
+
+- id: martinez2017quantum
+  type: article-journal
+  author:
+  - family: Martínez-Vargas
+    given: Esteban
+  - family: Pineda
+    given: Carlos
+  - family: Leyvraz
+    given: François
+  - family: Barberis-Blostein
+    given: Pablo
+  issued:
+  - year: '2017'
+  title: Quantum estimation of unknown parameters
+  container-title: Physical Review A
+  publisher: American Physical Society
+  page: '012136'
+  volume: '95'
+  issue: '1'
+
+- id: davalos2017quantum
+  type: article-journal
+  author:
+  - family: Davalos
+    given: David
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2017'
+  title: Quantum non-markovianity and localization
+  container-title: Physical Review A
+  publisher: American Physical Society
+  page: '062127'
+  volume: '96'
+  issue: '6'
+
+- id: sanchez2018trajectory
+  type: article-journal
+  author:
+  - family: Sánchez
+    given: Sergio
+  - family: Cocho
+    given: Germinal
+  - family: Flores
+    given: Jorge
+  - family: Gershenson
+    given: Carlos
+  - family: Iñiguez
+    given: Gerardo
+  - family: Pineda
+    given: Carlos
+  issued:
+  - year: '2018'
+  title: Trajectory stability in the traveling salesman problem
+  container-title: Complexity
+  publisher: Hindawi
+  volume: '2018'
+
+- id: morales2018rank
+  type: article-journal
+  author:
+  - family: Morales
+    given: José A
+  - family: Colman
+    given: Ewan
+  - family: Sánchez
+    given: Sergio
+  - family: Sánchez-Puig
+    given: Fernanda
+  - family: Pineda
+    given: Carlos
+  - family: Iñiguez
+    given: Gerardo
+  - family: Cocho
+    given: Germinal
+  - family: Flores
+    given: Jorge
+  - family: Gershenson
+    given: Carlos
+  issued:
+  - year: '2018'
+  title: Rank dynamics of word usage at multiple scales
+  container-title: arXiv preprint arXiv:1802.07258
+...
