@@ -1,0 +1,338 @@
+---
+artículos:
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Rubén Barrera'
+    año: '1981'
+    páginas: 5707-5718
+    revista: 'Physical Review B'
+    título: 'Optical Properties of Quasi-Two Dimensional Systems: Non Local Effects'
+    volumen: '23'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Ronald Fuchs'
+      - 'Rubén G. Barrera'
+    año: '1983'
+    páginas: 771-780
+    revista: 'Physical Review B'
+    título: 'Surface Contribution to the Optical Properties of Non-Local Systems'
+    volumen: '27'
+  -
+    autores:
+      - 'W. L. Mochán'
+      - 'R.G. Barrera'
+    año: '1984'
+    páginas: 207-212
+    revista: 'Journal de Physique (París)'
+    título: 'Surface Local-Field Effect'
+    volumen: '45 C5'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Rubén G. Barrera'
+    año: '1985'
+    páginas: '1192'
+    revista: 'Physical Review Letters'
+    título: 'Intrinsic surface-induced optical anisotropies of cubic crystals: Local field effect'
+    volumen: '55'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Rubén G. Barrera'
+    año: '1985'
+    páginas: '4984'
+    revista: 'Physical Review B'
+    título: 'Electromagnetic response of sistems with spatial fluctuations: I. General formalism'
+    volumen: '32'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Rubén G. Barrera'
+    año: '1985'
+    páginas: '4989'
+    revista: 'Physical Review B'
+    título: 'Electromagnetic response of systems with spatial fluctuations: II. Applications'
+    volumen: '32'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'R. G. Barrera'
+      - 'R. Fuchs'
+    año: '1986'
+    páginas: '5350'
+    revista: 'Physical Review B'
+    título: 'Reflectance of a rough insulating overlayer on a metal with a nonlocal optical response'
+    volumen: '33'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'R. G. Barrera'
+    año: '1986'
+    páginas: '2221'
+    revista: 'Physical Review Letters'
+    título: 'Local field effect on the surface conductivity of adsorbed overlayers'
+    volumen: '56'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Marcelo del Castillo-Mussot'
+      - 'Rubén G. Barrera'
+    año: '1987'
+    páginas: '1088'
+    revista: 'Physical Review B'
+    título: 'Effect of plasma waves on the optical properties of metal- insulator superlattices'
+    volumen: '35'
+  -
+    autores:
+      - 'M. del Castillo-Mussot'
+      - 'W. Luis Mochán'
+    año: '1987'
+    páginas: '555'
+    revista: 'Solid State Communications'
+    título: 'Note on hydrodynamic models of spatially dispersive conductor boundaries'
+    volumen: '62'
+  -
+    autores:
+      - 'M. del Castillo-Mussot'
+      - 'W. Luis Mochán'
+    año: '1987'
+    páginas: '1779'
+    revista: 'Physical Review B'
+    título: 'Effect of plasma waves on the optical properties of conducting superlattices'
+    volumen: '36'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'M. del Castillo-Mussot'
+    año: '1988'
+    páginas: '6763'
+    revista: 'Physical Review B'
+    título: 'Optics of multilayered conducting systems: Normal modes of periodic superlattices'
+    volumen: '37'
+  -
+    autores:
+      - 'J. Giraldo'
+      - 'M. del Castillo Mussot'
+      - 'R. G. Barrera'
+      - 'W. L. Mochán'
+    año: '1988'
+    páginas: '5380'
+    revista: 'Physical Review B'
+    título: 'Electron-hole pair excitation in multilayered conducting heterostructures'
+    volumen: '38'
+  -
+    autores:
+      - 'R.G. Barrera'
+      - 'G. Monsivais'
+      - 'W. L. Mochán'
+    año: '1988'
+    páginas: '5371'
+    revista: 'Physical Review B'
+    título: 'Renormalized polarizability in the Maxwell-Garnett Theory'
+    volumen: '38'
+  -
+    autores:
+      - 'Rubén G. Barrera'
+      - 'Pedro Villaseñor-González'
+      - 'W. Luis Mochán'
+      - 'Marcelo del Castillo-Mussot'
+      - 'Guillermo Monsivais'
+    año: '1989'
+    páginas: '3522'
+    revista: 'Physical Review~B'
+    título: 'Effects of the dispersion of sizes in the dielectric response of composites'
+    volumen: '39'
+  -
+    autores:
+      - G.~H.~Cocoletzi
+      - 'W.~Luis Mochán'
+    año: '1989'
+    páginas: '8403'
+    revista: 'Physical Review B'
+    título: 'Spatial dispersion effects on the optical properties of an insulator-excitonic semiconductor superlattice'
+    volumen: '39'
+  -
+    autores:
+      - 'R. G. Barrera'
+      - 'G. Monsivais'
+      - 'W. L. Mochán'
+      - 'E. Anda'
+    año: '1989'
+    páginas: '9998'
+    revista: 'Physical Review B'
+    título: 'Diagramatic approach to the effective dielectric response of composites'
+    volumen: '39'
+  -
+    autores:
+      - 'M.~del Castillo-Mussot'
+      - R.G.~Barrera
+      - T.~López-Ríos
+      - 'W.~Luis Mochán'
+    año: '1989'
+    páginas: '157'
+    revista: 'Solid State Communication'
+    título: 'Surface plasmon effects on the optical reflectivity of adsorbed molecular multilayers'
+    volumen: '71'
+  -
+    autores:
+      - 'Shu Wang'
+      - 'Rubén G. Barrera'
+      - 'W. Luis Mochán'
+    año: '1989'
+    páginas: '1571'
+    revista: 'Physical Review B'
+    título: 'Electromagnetic field near rough surfaces of spatially dispersive systems'
+    volumen: '40'
+  -
+    autores:
+      - 'W.~Luis Mochán'
+      - 'José Récamier'
+    año: '1989'
+    páginas: '2100'
+    revista: 'Physical Review Letters'
+    título: 'Photon-single phonon coupling at polar crystal surfaces'
+    volumen: '63'
+  -
+    autores:
+      - 'M. del Castillo-Mussot'
+      - 'R. G. Barrera'
+      - 'J. Giraldo'
+      - 'W. L. Mochán'
+    año: '1989'
+    páginas: '165'
+    revista: 'Revista Cubana de Física'
+    título: 'Creación de pares electrón-hueco en superredes conductor-aislante'
+    volumen: '9'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Rubén G. Barrera'
+    año: '1989'
+    páginas: '155'
+    revista: 'Revista Cubana de Física'
+    título: 'Anisotropía óptica de semiconductores III-V'
+    volumen: '9'
+  -
+    autores:
+      - 'Barrera RG'
+      - 'Anda E'
+      - 'Monsivais G'
+      - 'Mochan WL'
+    año: '1989'
+    páginas: '368'
+    revista: 'Physica A'
+    título: 'A Diagrammatic Approach to the Optical-Properties of Composites'
+    volumen: '157'
+  -
+    autores:
+      - R.~G.~Barrera
+      - P.~Villaseñor-González
+      - 'W.~Luis Mochán'
+      - G.~Monsivais
+    año: '1990'
+    páginas: '7370'
+    revista: 'Physical Review B'
+    título: 'Effective dielectric response of polydispersed composites'
+    volumen: '41'
+  -
+    autores:
+      - 'Shu Wang'
+      - 'W.~Luis Mochán'
+      - 'Rubén~G. Barrera'
+    año: '1990'
+    páginas: '9155'
+    revista: 'Physical Review B'
+    título: 'Reflectance anisotropy of the (110) reconstructed surface of gold'
+    volumen: '42'
+  -
+    autores:
+      - 'R.~Del Sole'
+      - W.~L.~Mochán
+      - R.~G.~Barrera
+    año: '1991'
+    páginas: '2136'
+    revista: 'Physical Review B'
+    título: 'Local field effects on the reflectance anisotropy of Si(110):H'
+    volumen: '43'
+  -
+    autores:
+      - 'E.~López Olazagasti'
+      - G.~H.~Cocoletzi
+      - 'W. Luis Mochán'
+    año: '1991'
+    páginas: '9'
+    revista: 'Solid State Commun.'
+    título: 'Optical properties of bimetallic superlattices'
+    volumen: '78'
+  -
+    autores:
+      - 'Jesús Tarriba'
+      - 'W. Luis Mochán'
+    año: '1992'
+    páginas: '12902'
+    revista: 'Physical Review B (RC)'
+    título: 'Collective surface modes of Ag single crystals'
+    volumen: '46'
+  -
+    autores:
+      - 'Raul Alfonso Vázquez Nava'
+      - 'Marcelo del Castillo-Mussot'
+      - 'W. Luis Mochán'
+    año: '1993'
+    páginas: '3971'
+    revista: 'Physical Review B'
+    título: 'Reflectance of non-local conducting superlattices'
+    volumen: '47'
+  -
+    autores:
+      - 'Rubén G. Barrera'
+      - 'J. Giraldo '
+      - 'W. Luis Mochán'
+    año: '1993'
+    páginas: '8528'
+    revista: 'Physical Review B'
+    título: 'Effective dielectric response of a composite with aligned spheroidal inclusions'
+    volumen: '47'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'José Récamier'
+    año: '1993'
+    páginas: A185
+    revista: 'Journal of Physics: Condensed Matter'
+    título: 'Infrared anisotropy as a surface probe'
+    volumen: '5'
+  -
+    autores:
+      - 'W. Luis Mochán'
+      - 'Bernardo S. Mendoza'
+    año: '1993'
+    páginas: A183
+    revista: 'Journal of Physics: Condensed Matter'
+    título: 'Second harmonic generation at crystal surfaces'
+    volumen: '5'
+  -
+    autores:
+      - 'Marcelo del Castillo-Mussot'
+      - 'W. Luis Mochán'
+      - 'Bernardo S. Mendoza'
+    año: '1993'
+    páginas: A393
+    revista: 'Journal of Physics: Condensed Matter'
+    título: 'Generalized hydrodynamic model of inhomogeneous conductors in three, two, and one dimensions'
+    volumen: '5'
+  -
+    autores:
+      - 'Y. Borensztein'
+      - 'A. Tadjeddine'
+      - 'W. L. Mochán'
+      - 'J. Tarriba'
+      - 'R. G. Barrera'
+    año: '1993'
+    páginas: '24'
+    revista: 'Thin Solid Films'
+    título: 'Optical anisotropies of Ag single crystals'
+    volumen: '233'
+

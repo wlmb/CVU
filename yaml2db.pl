@@ -4,7 +4,7 @@ use strict;
 use feature qw(say);
 use utf8;
 use Getopt::Long;
-use Text::Balanced qw(extract_bracketed);
+#use Text::Balanced qw(extract_bracketed);
 use YAML::Tiny;
 use DBI;
 use open qw/ :std :encoding(utf8) /;

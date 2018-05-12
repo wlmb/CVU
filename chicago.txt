@@ -1,0 +1,106 @@
+Agranovich, V. M., and Yu. N. Gartstein. “Electrodynamics of
+Metamaterials and the Landau–Lifshitz Approach to the Magnetic
+Permeability.” Metamaterials 3, no. 1 (March 1, 2009):
+1–9. doi:10.1016/j.metmat.2009.02.002.
+
+A.M. Dykhne. “Contluctivity of a Two-Dimensional Two-Phase System.”
+Journal of Experimental and Theoretical Physics (JETP) 32, no. 1
+(January 1971): 63.
+
+Bender, Carl M., Dorje C. Brody, and Markus P. Müller. “Hamiltonian
+for the Zeros of the Riemann Zeta Function.” Physical Review Letters
+118, no. 13 (March 30, 2017):
+130201. doi:10.1103/PhysRevLett.118.130201.
+
+Biris, C. G., and N. C. Panoiu. “Second Harmonic Generation in
+Metamaterials Based on Homogeneous Centrosymmetric Nanowires.”
+Physical Review B 81, no. 19 (May 4, 2010):
+195102. doi:10.1103/PhysRevB.81.195102.
+
+Craster, R. V., and Yu. V. Obnosov. “Checkerboard Composites with
+Separated Phases.” Journal of Mathematical Physics 42, no. 11 (October
+18, 2001): 5379–88. doi:10.1063/1.1398336.
+
+Guenneau, S., F. Zolla, and A. Nicolet. “Homogenization of 3D Finite
+Photonic Crystals with Heterogeneous Permittivity and Permeability.”
+Waves in Random and Complex Media 17, no. 4 (October 18, 2007):
+653–97. doi:10.1080/17455030701607013.
+
+Guizal, B., and D. Felbacq. “Numerical Computation of the Scattering
+Matrix of an Electromagnetic Resonator.” Physical Review E 66, no. 2
+(August 16, 2002): 026602. doi:10.1103/PhysRevE.66.026602.
+
+Kristensson, G., and N. Wellander. “Homogenization of the Maxwell
+Equations at Fixed Frequency.” SIAM Journal on Applied Mathematics 64,
+no. 1 (January 1, 2003): 170–95. doi:10.1137/S0036139902403366.
+
+Mendelson, Kenneth S. “A Theorem on the Effective Conductivity of a
+Two‐dimensional Heterogeneous Medium.” Journal of Applied Physics 46,
+no. 11 (November 1, 1975): 4740–41. doi:10.1063/1.321549.
+
+Mendoza, Bernardo S., and W. Luis Mochán. “Exactly Solvable Model of
+Surface Second-Harmonic Generation.” Physical Review B 53, no. 8
+(February 15, 1996): 4999–5006. doi:10.1103/PhysRevB.53.4999.
+
+Mochán, W. L., M. del Castillo‐Mussot, and
+R. A. Vázques‐Nava. “Transfer Matrix Approach to the Optical
+Reflectance of Non‐local Periodic Superlattices.” Physica Status
+Solidi (B) 174, no. 1 (November 1, 1992):
+273–78. doi:10.1002/pssb.2221740127.
+
+Mochan, W. L., and A. Ramirez-Solis. “How a Drug and Explosives
+Detector Proved Useless: Military Use of the GT200.” IEEE Technology
+and Society Magazine 36, no. 2 (June 2017):
+76–82. doi:10.1109/MTS.2017.2696601.
+
+Molyneux, John E. “Effective Permittivity of a Polycrystalline
+Dielectric.” Journal of Mathematical Physics 11, no. 4 (April 1,
+1970): 1172–84. doi:10.1063/1.1665245.
+
+Movchan, A. B., and S. Guenneau. “Split-Ring Resonators and Localized
+Modes.” Physical Review B 70, no. 12 (September 29, 2004):
+125116. doi:10.1103/PhysRevB.70.125116.
+
+Nevard, John, and Joseph B. Keller. “Reciprocal Relations for
+Effective Conductivities of Anisotropic Media.” Journal of
+Mathematical Physics 26, no. 11 (November 1, 1985):
+2761–65. doi:10.1063/1.526697.
+
+Rodriguez, Jaime E. Perez, Giuseppe Piruccio, and Raul
+Esquivel-Sirvent. “Fano Interference for Tailoring near-Field
+Radiative Heat Transfer,” June 5,
+2017. https://arxiv.org/abs/1706.01550.
+
+Schulgasser, Kalman. “On a Phase Interchange Relationship for
+Composite Materials.” Journal of Mathematical Physics 17, no. 3 (March
+1, 1976): 378–81. doi:10.1063/1.522903.
+
+Shermer, Michael. “Why Climate Skeptics Are Wrong.” Scientific
+American. Accessed June 7,
+2017. https://www.scientificamerican.com/article/why-climate-skeptics-are-wrong/.
+
+Shi, Fenghua, Yihang Chen, Peng Han, and Costas
+M. Soukoulis. “Investigation of One-Dimensional Photonic Bandgap
+Structures Containing Lossy Double-Negative Metamaterials through the
+Bloch Impedance.” JOSA B 30, no. 6 (June 1, 2013):
+1473–78. doi:10.1364/JOSAB.30.001473.
+
+Smith, Stefan G. Llewellyn, and Anthony M. J. Davis. “The Split Ring
+Resonator.” Proceedings of the Royal Society of London A:
+Mathematical, Physical and Engineering Sciences, May 20, 2010,
+rspa20100047. doi:10.1098/rspa.2010.0047.
+
+Sten, J. C. E., and D. Sjoberg. “Analytical Approach to Low-Frequency
+Scattering and Homogenisation of Split Ring Elements.” In 2009 3rd
+European Conference on Antennas and Propagation, 147–49, 2009.
+
+Sten, Johan C.-E., and Daniel Sjoberg. “Low-Frequency Scattering
+Analysis and Homogenisation of Split-Ring Elements.” Progress In
+Electromagnetics Research B 35 (2011):
+187–212. doi:10.2528/PIERB11090606.
+
+Welte, Stephan, Bastian Hacker, Severin Daiss, Stephan Ritter, and
+Gerhard Rempe. “Cavity Carving of Atomic Bell States.” Physical Review
+Letters 118, no. 21 (May 26, 2017):
+210503. doi:10.1103/PhysRevLett.118.210503.
+

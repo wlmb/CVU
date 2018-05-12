@@ -27,8 +27,8 @@ my $readar=qq(SELECT rowid, título, primerautor, últimoautor, revista,
 my $readau=qq(SELECT autor FROM listaAutores WHERE rowid=?);
 #lee nombre del autor
 my $readaucan=qq(SELECT autorcanónico FROM autores WHERE rowid=?);
-#lee nombre de la revista
-my $readrev=qq(SELECT revistacanónica FROM revistas WHERE rowid=?);
+#lee nombre de la revista e issn
+my $readrev=qq(SELECT revistacanónica, issn FROM revistas WHERE rowid=?);
 
 my $strar=$dbh->prepare($readar);
 my $strau=$dbh->prepare($readau);
@@ -45,9 +45,10 @@ while(my $row=$strar->fetchrow_hashref){
 	$registro .= "$autor, ";
     }
     $strrev->execute($row->{revista});
-    my ($revista)=$strrev->fetchrow_array;
+    my ($revista, $issn)=$strrev->fetchrow_array;
     $registro.= $row->{título}. ", $revista ". $row->{volumen}. " (".
-    $row->{año}. ") ". $row->{páginas};
+    $row->{año}. ") ". $row->{páginas} . ".";
+    $registro .= " ISSN: $issn." if defined $issn;
     print "$registro\n\n";
 }
 
