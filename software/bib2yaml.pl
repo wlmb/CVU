@@ -4,14 +4,10 @@ use strict;
 use feature qw(say);
 use utf8;
 use Getopt::Long;
-#use Text::Balanced qw(extract_bracketed);
 use BibTeX::Parser;
 use IO::File;
 use List::Util qw/pairs/;
 use YAML::Tiny;
-#use DBI;
-use Capture::Tiny qw(capture);
-use File::Temp qw(tmpnam);
 use open qw/ :std :encoding(utf8) /;
 
 my $cvu; #número CVU
@@ -23,7 +19,7 @@ usage() unless GetOptions('i=s'=>\$input, 'o=s'=>\$output,
     );  
 usage() unless defined $input;
 if(defined $output){
-    open(OUTPUT, '>', $output) or die "Couldn't open $output: $!";
+    open(OUTPUT, '>', $output) or die "No pude abrir $output: $!";
 }else{
     *OUTPUT=*STDOUT;
 }
@@ -35,7 +31,7 @@ $inv{investigador}->{curp}=$curp if defined $curp;
 push @{$yaml}, \%inv if defined $inv{investigador};
 
 my %articulos;
-my $hinput=IO::File->new($input);
+my $hinput=IO::File->new($input) or die "No pude abrir $input";
 my $parser=BibTeX::Parser->new($hinput);
 my @fields= qw(título title revista journal volumen volume páginas pages
            año year doi doi issn issn eissn eissn);
@@ -48,7 +44,7 @@ while(my $entry=$parser->next){
     $struct{$_->[0]}=detex($entry->field($_->[1])) foreach pairs @fields;
     $struct{páginas}||=detex($entry->field("article-number"));
     map {delete $struct{$_->[0]} unless defined $struct{$_->[0]}}
-    pairs @fields;
+        pairs @fields;
     push @{$articulos{artículos}}, \%struct;
 }
 #push @{$yaml->[1]->{"artículos"}}, \%struct;
