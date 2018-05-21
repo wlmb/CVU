@@ -58,7 +58,8 @@ sub busca {
 	foreach (@words){
 	    $results{$_}++ foreach(keys %{$table{$_}});
 	}
-	my @a=grep {$results{$_} == @words} keys %results;
+	my @a=sort {$canon->[$a]->{nombre} cmp $canon->[$b]->{nombre}} 
+	      grep {$results{$_} == @words} keys %results;
 	say "Nombre original: $orig\nBuscar: $comun";
 	my $i=0;
 	print "-1. MANUAL\n";
