@@ -80,8 +80,15 @@ sub busca {
 	    if($respuesta==-1){ #caso manual
 		my ($mcanon, $missn)=manual($orig);
 		next unless $mcanon;
+		# update dictionary
 		$dic->{$orig}->{canon} = $mcanon;
 		$dic->{$orig}->{issn} = $missn;
+		# update canonical abbrevs. table
+		my $normal=normalize($mcanon);
+		my @words=split ' ', $normal;
+		map {$table{$_}{$index}=1;} map {abbrevs($_)} @words;
+		++$index;
+		push @{$canon}, {nombre=>$mcanon, issn=>$missn};
 	    }
 	    if($respuesta >=1 && $respuesta <=  @a){
 		$dic->{$orig}->{canon} =
