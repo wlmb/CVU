@@ -39,7 +39,7 @@ $are=qr/$are/i;
 die "Invalid author regular expression $are" unless defined $are;
 
 my @required=qw(autores título revista volumen páginas año 
-                doi infoextra); #required fields (content may be empty)
+                doi infoextra ); #required fields (content may be empty)
 my %required;
 map {$required{$_}=1} @required;
 
@@ -79,8 +79,7 @@ foreach(@articulos){
     }
     die "Me sobraron autores $autores en $_" if $autores;
     $struct{autores}=[@autores];
-    delete $struct{doi} unless $struct{doi};
-    delete $struct{infoextra} unless $struct{infoextra};
+    defined $struct{$_} or delete $struct{$_} foreach keys %struct;
     push @{$articulos{artículos}}, \%struct;
 }
 push @{$yaml}, \%articulos if defined $articulos{artículos};
