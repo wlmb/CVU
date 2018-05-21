@@ -42,7 +42,7 @@ while(my $entry=$parser->next){
     my %struct;
     $struct{autores}=[map {detex($_->to_string)} $entry->author];
     $struct{$_->[0]}=detex($entry->field($_->[1])) foreach pairs @fields;
-    $struct{páginas}||=detex($entry->field("article-number"));
+    $struct{páginas}//=detex($entry->field("article-number"));
     map {delete $struct{$_->[0]} unless defined $struct{$_->[0]}}
         pairs @fields;
     push @{$articulos{artículos}}, \%struct;
