@@ -20,14 +20,18 @@ usage() unless defined $pubin and defined $canonin and defined $pubout;
 # inicializa archivos
 my $pubs=YAML::Tiny->read($pubin);
 my $canon=YAML::Tiny->read($canonin);
-my $comundic=defined $comunin?YAML::Tiny->read($comunin):YAML::Tiny->new({}); 
+my $comundic=defined $comunin?YAML::Tiny->read($comunin)
+                             :YAML::Tiny->new({}); 
 my $index=0;
 my %table;
+push @{$canon}, {nombre=>$_->{canon}, issn=>$_->{issn}} 
+     foreach(values %{$comundic->[0]}); 
 foreach(@{$canon}){ #prepare lookup table
     my $normal=normalize($_->{nombre});
     my @words=split ' ', $normal;
     map {$table{$_}{$index}=1;} map {abbrevs($_)} @words;
 } continue { ++$index; }
+
 my %failed;
 foreach(@{$pubs}){
     next unless $_->{artículos};
