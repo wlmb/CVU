@@ -26,8 +26,10 @@ my $index=0;
 my %table;
 push @{$canon}, {nombre=>$_->{canon}, issn=>$_->{issn}} 
      foreach(values %{$comundic->[0]}); 
+my %seen;
 foreach(@{$canon}){ #prepare lookup table
     my $normal=normalize($_->{nombre});
+    next if $seen{$normal}++; #avoid duplications
     my @words=split ' ', $normal;
     map {$table{$_}{$index}=1;} map {abbrevs($_)} @words;
 } continue { ++$index; }
