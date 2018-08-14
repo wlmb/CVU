@@ -21,4 +21,4 @@ Recomendaciones:
 1. Si desea que un usuario particular vea su comentario, puede mencionar su cuenta antecedida de una arroba, \@cuenta.
 1. Para conocer toda la riqueza de herramientas que ofrece github en su sistema de reportes y de desarrollo y control de versiones de software puede consultar las diversas guías y videos en su [sitio](https://https://github.com).
 
-![CVU Infernal](https://github.com/wlmb/CVU/blob/master/cvuInfernal.jpg "CVU Infernal")
+![CVU Infernal](https://github.com/wlmb/CVU/blob/master/presentacion/cvuInfernal.jpg "CVU Infernal")
